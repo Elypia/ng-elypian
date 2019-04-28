@@ -1,0 +1,33 @@
+@import '~@angular/material/theming';
+@import '../../elypian/src/lib/stateful-button/stateful-button.theme';
+
+$primary: mat-palette($mat-blue);
+$accent: mat-palette($mat-blue-gray);
+$warn: mat-palette($mat-red);
+$theme: mat-dark-theme($primary, $accent, $warn);
+
+@include mat-core();
+@include angular-material-theme($theme);
+@include elypian-angular-stateful-button-theme($theme);
+
+html, body, app-root, div, header, footer,
+h1, h2, h3, h4, h5, h6,
+p, a {
+  margin: 0;
+  padding: 0;
+
+  color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+}
+
+html, body, app-root {
+  height: 100vh;
+}
+
+.container {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}

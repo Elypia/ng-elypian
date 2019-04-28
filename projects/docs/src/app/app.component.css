@@ -1,0 +1,23 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+#toolbar-left {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin-left: 1em;
+}
+
+.fab {
+  padding-right: 0.5em;
+}
+
+#fill {
+  background-color: #303030;
+  height: calc(100% - 64px);
+}

@@ -1,0 +1,6 @@
+<span *ngIf="updateDate"
+      matTooltip="Modified on: {{updateDate | date: format}}"
+      [matTooltipPosition]="updateTooltipPosition">
+  <mat-icon>edit</mat-icon>
+</span>
+<span>{{date | date: format}}</span>

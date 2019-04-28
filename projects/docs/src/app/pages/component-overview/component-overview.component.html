@@ -1,0 +1,32 @@
+<mat-sidenav-container>
+  <mat-sidenav  mode="side" opened>
+    <mat-list>
+      <button mat-button
+              *ngFor="let doc of docs.Docs"
+              [routerLink]="['/component', doc.id]">
+        <mat-list-item>
+          {{doc.name}}
+        </mat-list-item>
+      </button>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content *ngIf="doc" class="container">
+      <h1>{{doc.name}}</h1>
+      <mat-tab-group animationDuration="200" [dynamicHeight]="true">
+        <mat-tab label="Overview">
+          <mat-card [innerHTML]="doc.summary | markdown"></mat-card>
+        </mat-tab>
+        <mat-tab label="API">
+          <mat-card>
+            Havn't written anything. DX
+          </mat-card>
+        </mat-tab>
+        <mat-tab label="Examples">
+          <mat-card>
+            <app-stateful-button-example></app-stateful-button-example>
+            <app-loadable-example></app-loadable-example>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+  </mat-sidenav-content>
+</mat-sidenav-container>

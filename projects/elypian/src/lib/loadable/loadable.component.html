@@ -1,0 +1,8 @@
+<div [ngSwitch]="state">
+  <ng-content *ngSwitchCase="LoadState.NotLoaded" select="ely-not-loaded"></ng-content>
+  <mat-spinner *ngSwitchCase="LoadState.Loading" [diameter]="spinnerDiameter"></mat-spinner>
+  <ng-content *ngSwitchCase="LoadState.Loaded"></ng-content>
+  <div *ngSwitchCase="LoadState.Failed" class="failed">
+    <ng-content select="ely-failed"></ng-content>
+  </div>
+</div>

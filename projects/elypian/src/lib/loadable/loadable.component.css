@@ -1,0 +1,21 @@
+mat-spinner {
+  margin: 0 auto;
+}
+
+.failed {
+  display: block;
+}
+
+.failed:empty:before {
+  content: ':(';
+  font-size: xx-large;
+  display: block;
+  text-align: center;
+}
+
+.failed:empty:after {
+  content: 'Something went wrong!';
+  display: block;
+  padding-top: 1em;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<mat-radio-group [(ngModel)]="state">
+  <mat-radio-button [value]="LoadState.NotLoaded">Not Loaded</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
+</mat-radio-group>
+<ely-stateful-button [state]="state">
+  Login
+</ely-stateful-button>
