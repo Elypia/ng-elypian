@@ -4,6 +4,7 @@ build:
   stage: build
   script:
     - npm install
+    - npm rebuild node-sass
   cache:
     paths:
       - node_modules/
