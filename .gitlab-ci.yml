@@ -1,4 +1,4 @@
-image: node:6.17.1-alpine
+image: node:8.16.0-alpine
 
 build:
   stage: build
