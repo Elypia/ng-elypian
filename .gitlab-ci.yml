@@ -22,7 +22,7 @@ build:
 deploy:
   stage: deploy
   script:
-    - ng build docs --prod
+    - npm run-script build
   cache:
     paths:
       - node_modules/
