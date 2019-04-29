@@ -20,14 +20,15 @@ build:
       - node_modules/
     policy: pull
 
-deploy:
+pages:
   stage: deploy
   script:
     - npm run-script build
+    - mv dist/docs/ public/
   cache:
     paths:
       - node_modules/
     policy: pull
   artifacts:
     paths:
-      - dist/docs public
+      - public
