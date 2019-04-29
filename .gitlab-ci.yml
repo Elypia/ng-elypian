@@ -1,0 +1,32 @@
+image: node:12.0.0-alpine
+
+build:
+  stage: build
+  script:
+    - npm install
+  cache:
+    paths:
+      - node_modules/
+    policy: pull-push
+
+.test:
+  stage: test
+  script:
+    - ng test
+    - ng e2e
+  cache:
+    paths:
+      - node_modules/
+    policy: pull
+
+deploy:
+  stage: deploy
+  script:
+    - ng build docs --prod
+  cache:
+    paths:
+      - node_modules/
+    policy: pull
+  artifacts:
+    paths:
+      - dist/docs public

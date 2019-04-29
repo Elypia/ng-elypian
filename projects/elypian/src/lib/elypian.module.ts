@@ -1,12 +1,16 @@
 import {NgModule} from '@angular/core';
 import {StatefulButtonComponent} from './stateful-button/stateful-button.component';
 import {
-  MatButtonModule, MatCardModule,
+  MatButtonModule,
+  MatCardModule,
   MatChipsModule,
-  MatIconModule, MatListModule,
+  MatIconModule,
+  MatListModule,
   MatProgressSpinnerModule,
   MatRadioModule,
-  MatSelectModule, MatSidenavModule, MatTabsModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatTabsModule,
   MatToolbarModule,
   MatTooltipModule
 } from '@angular/material';
@@ -18,11 +22,11 @@ import {FormsModule} from '@angular/forms';
 import {TimestampComponent} from './timestamp/timestamp.component';
 import {TimegraphComponent} from './timegraph/timegraph.component';
 import {NotLoadedDirective} from './loadable/not-loaded.directive';
-import { FailedDirective } from './loadable/failed.directive';
+import {FailedDirective} from './loadable/failed.directive';
 import {MarkdownModule} from 'ngx-markdown';
 import {RouterModule} from '@angular/router';
-import { StatefulButtonExampleComponent } from '../../../docs/src/app/examples/stateful-button-example/stateful-button-example.component';
-import { LoadableExampleComponent } from '../../../docs/src/app/examples/loadable-example/loadable-example.component';
+import {StatefulButtonExampleComponent} from '../../../docs/src/app/examples/stateful-button-example/stateful-button-example.component';
+import {LoadableExampleComponent} from '../../../docs/src/app/examples/loadable-example/loadable-example.component';
 
 @NgModule({
   declarations: [

@@ -1,4 +1,13 @@
 import {Injectable} from '@angular/core';
+import {LoadableExampleComponent} from '../examples/loadable-example/loadable-example.component';
+import {StatefulButtonExampleComponent} from '../examples/stateful-button-example/stateful-button-example.component';
+
+export interface DocItem {
+  id: string;
+  name: string;
+  summary: string;
+  examples: any[];
+}
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +20,7 @@ export class DocService {
       name: 'Loadable',
       summary: 'A panel to manage loadable content and manage unloaded, loading, loaded and failed states.',
       examples: [
-
+        LoadableExampleComponent
       ]
     },
     {
@@ -19,7 +28,7 @@ export class DocService {
       name: 'Stateful Button',
       summary: 'A clickable button that displays the state of it\'s action.',
       examples: [
-
+        StatefulButtonExampleComponent
       ]
     },
     {
@@ -35,11 +44,4 @@ export class DocService {
   getItem(id: string): DocItem {
     return this.Docs.find(d => d.id === id);
   }
-}
-
-export interface DocItem {
-  id: string;
-  name: string;
-  summary?: string;
-  examples?: string[];
 }

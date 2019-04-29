@@ -9,6 +9,8 @@ import {MatButtonModule, MatMenuModule, MatSidenavModule, MatToolbarModule} from
 import {ComponentOverviewComponent} from './pages/component-overview/component-overview.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MarkdownModule, MarkdownModuleConfig, MarkedOptions} from 'ngx-markdown';
+import {LoadableExampleComponent} from './examples/loadable-example/loadable-example.component';
+import {StatefulButtonExampleComponent} from './examples/stateful-button-example/stateful-button-example.component';
 
 const appRoutes: Routes = [
   { path: 'component/:id', component: ComponentOverviewComponent },
@@ -41,6 +43,10 @@ const markdownOptions: MarkdownModuleConfig = {
     MatSidenavModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    LoadableExampleComponent,
+    StatefulButtonExampleComponent
+  ]
 })
 export class AppModule { }
