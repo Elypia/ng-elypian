@@ -1,22 +1,10 @@
-<mat-radio-group [(ngModel)]="state">
-  <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
-  <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
-  <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
-</mat-radio-group>
-<ely-loadable [state]="state">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis fermentum massa. Nam at risus sapien. Donec
-    purus arcu, porttitor sed nulla sed, molestie posuere neque. Ut bibendum, dolor et interdum ultricies, ex justo
-    ullamcorper justo, vel varius metus enim a est. Etiam purus leo, auctor vitae leo ac, dictum blandit felis.
-    Maecenas ac lacus sed augue mattis porttitor sit amet eget orci. Vestibulum quis euismod tellus, eget lobortis orci.
-    Nulla facilisi. Morbi faucibus eros dui, consectetur maximus purus faucibus quis. Fusce sit amet cursus dolor.
-    Quisque nec tortor in tortor venenatis eleifend gravida quis erat. Cras ac congue massa. Nulla nibh elit, rhoncus
-    eget ex eget, egestas placerat ipsum. Aenean sapien tellus, volutpat in libero vitae, vestibulum vehicula ipsum.
-    Morbi condimentum pharetra pulvinar. Mauris sollicitudin enim a aliquet feugiat.
-  </p>
-  <p>
-    Aliquam id molestie quam. Maecenas sit amet luctus odio, eget dapibus turpis. Mauris in mauris eu magna sodales
-    cursus. Fusce vitae pretium lacus. Sed mattis efficitur luctus. Nam sodales aliquam quam eget pulvinar. Suspendisse
-    potenti. Maecenas maximus dignissim arcu, ut mattis purus sodales vel.
-  </p>
-</ely-loadable>
+<app-code-example name="Simple Loadable Example">
+  <mat-radio-group [(ngModel)]="state">
+    <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
+    <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
+    <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
+  </mat-radio-group>
+  <ely-loadable [state]="state">
+    <p>Content loaded from remotely.</p>
+  </ely-loadable>
+</app-code-example>

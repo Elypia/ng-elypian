@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {LoadableExampleComponent} from '../examples/loadable-example/loadable-example.component';
 import {StatefulButtonExampleComponent} from '../examples/stateful-button-example/stateful-button-example.component';
+import {TimestampExampleComponent} from '../examples/timestamp-example/timestamp-example.component';
 
 export interface DocItem {
   id: string;
@@ -36,7 +37,7 @@ export class DocService {
       name: 'Timestamp',
       summary: 'A simple timestamp that conveys date information and last modification.',
       examples: [
-
+        TimestampExampleComponent
       ]
     }
   ];
