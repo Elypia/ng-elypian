@@ -54,7 +54,15 @@
             "polyfills": "projects/docs/src/polyfills.ts",
             "tsConfig": "projects/docs/tsconfig.app.json",
             "assets": [
-              "projects/docs/src/favicon.ico",
+              "projects/docs/src/android-chrome-192x192.png",
+              "projects/docs/src/android-chrome-256x256.png",
+              "projects/docs/src/apple-touch-icon.png",
+              "projects/docs/src/browserconfig.xml",
+              "projects/docs/src/favicon-16x16.png",
+              "projects/docs/src/favicon-32x32.png",
+              "projects/docs/src/mstile-150x150.png",
+              "projects/docs/src/safari-pinned-tab.svg",
+              "projects/docs/src/site.webmanifest",
               "projects/docs/src/assets"
             ],
             "styles": [
