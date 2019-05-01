@@ -1,30 +1,38 @@
-<mat-card-title>
-  {{name}}
-  <mat-button-toggle [checked]="viewCode"
-                     (change)="viewCode = $event.source.checked">
-    <mat-icon>code</mat-icon>
-  </mat-button-toggle>
-</mat-card-title>
-<div>
-  <ng-content></ng-content>
+<div class="example">
+  <mat-card-title>
+    {{name}}
+    <mat-button-toggle [checked]="viewCode"
+                       (change)="viewCode = $event.source.checked">
+      <mat-icon>code</mat-icon>
+    </mat-button-toggle>
+  </mat-card-title>
+  <div class="example-component">
+    <ng-content></ng-content>
+  </div>
+  <mat-tab-group *ngIf="viewCode">
+    <mat-tab label="HTML">
+      <div class="html-content"><ng-content select=".html"></ng-content></div>
+      <markdown ngPreserveWhitespaces class="html">
+        ```html
+        &lt;!-- No HTML to show! --&gt;
+        ```
+      </markdown>
+    </mat-tab>
+    <mat-tab label="TS">
+      <div class="ts-content"><ng-content select=".ts"></ng-content></div>
+      <markdown ngPreserveWhitespaces class="ts">
+        ```ts
+        // No TS to show!
+        ```
+      </markdown>
+    </mat-tab>
+    <mat-tab label="CSS">
+      <div class="css-content"><ng-content select=".css"></ng-content></div>
+      <markdown ngPreserveWhitespaces class="css">
+        ```css
+        /* No CSS to show! */
+        ```
+      </markdown>
+    </mat-tab>
+  </mat-tab-group>
 </div>
-<mat-tab-group *ngIf="viewCode">
-  <mat-tab label="HTML">
-    <markdown ngPreserveWhitespaces>
-      ```html
-      &lt;!-- Manage the LoadState and pass it to ely-loadable. --&gt;
-      &lt;ely-loadable [state]=&quot;state&quot;&gt;
-        &lt;p&gt;Content loaded from remotely.&lt;/p&gt;
-      &lt;/ely-loadable&gt;
-      ```
-    </markdown>
-  </mat-tab>
-  <mat-tab label="TS">
-    <markdown ngPreserveWhitespaces>
-      ```ts
-      /** The current state of the component. */
-      public state: LoadState = LoadState.Loading;
-      ```
-    </markdown>
-  </mat-tab>
-</mat-tab-group>

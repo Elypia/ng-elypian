@@ -1,7 +1,7 @@
 import {Directive} from '@angular/core';
 
 @Directive({
-  selector: 'ely-failed'
+  selector: '[elyFailed]'
 })
 export class FailedDirective {
 

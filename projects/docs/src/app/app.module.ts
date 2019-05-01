@@ -25,6 +25,7 @@ import {TimestampExampleComponent} from './examples/timestamp-example/timestamp-
 import {CodeExampleComponent} from './components/code-example/code-example.component';
 import {ElypianModule} from '../../../elypian/src/lib/elypian.module';
 import {FormsModule} from '@angular/forms';
+import { ModifiedTimestampExampleComponent } from './examples/modified-timestamp-example/modified-timestamp-example.component';
 
 const appRoutes: Routes = [
   { path: 'component/:id', component: ComponentOverviewComponent },
@@ -50,7 +51,8 @@ const markdownOptions: MarkdownModuleConfig = {
     StatefulButtonExampleComponent,
     TimestampExampleComponent,
     ComponentOverviewComponent,
-    HomeComponent
+    HomeComponent,
+    ModifiedTimestampExampleComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -76,7 +78,8 @@ const markdownOptions: MarkdownModuleConfig = {
   entryComponents: [
     LoadableExampleComponent,
     StatefulButtonExampleComponent,
-    TimestampExampleComponent
+    TimestampExampleComponent,
+    ModifiedTimestampExampleComponent
   ]
 })
 export class AppModule { }

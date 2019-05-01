@@ -59,7 +59,7 @@ import {RouterModule} from '@angular/router';
     TimestampComponent,
     TimegraphComponent,
     NotLoadedDirective,
-    FailedDirective
+    FailedDirective,
   ]
 })
 export class ElypianModule { }

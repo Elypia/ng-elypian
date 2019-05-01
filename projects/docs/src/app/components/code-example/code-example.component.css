@@ -1,9 +1,27 @@
+.example {
+  padding-bottom: 2em;
+}
+
 mat-card-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-div {
-  padding: 1em 0;
+.example-component {
+  padding: 1em;
+  border-radius: 0.25em;
+  background-color: #343434;
+}
+
+mat-tab-group {
+  padding-top: 1em;
+}
+
+.html, .ts, .css {
+  display: none;
+}
+
+.html-content:empty + .html, .ts-content:empty + .ts, .css-content:empty + .css {
+  display: initial;
 }

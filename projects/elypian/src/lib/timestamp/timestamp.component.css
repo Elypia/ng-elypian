@@ -1,3 +1,8 @@
+div {
+  display: flex;
+  align-items: center;
+}
+
 mat-icon {
-  font-size: 1em;
+  padding-right: 0.25em;
 }

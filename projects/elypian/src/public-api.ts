@@ -3,3 +3,4 @@
  */
 
 export * from './lib/elypian.module';
+export * from './lib/loading';

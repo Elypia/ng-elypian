@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {LoadState} from '../../../../../elypian/src/lib/loadable/loading';
+import {LoadState} from '../../../../../elypian/src/lib/loading';
 
 @Component({
   selector: 'app-stateful-button-example',

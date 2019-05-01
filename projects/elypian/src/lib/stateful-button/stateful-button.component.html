@@ -4,8 +4,8 @@
                     'failed': state === LoadState.Failed}">
     <ely-loadable [spinnerDiameter]="24" [state]="state">
       <span>Success</span>
-      <ely-not-loaded><ng-content></ng-content></ely-not-loaded>
-      <ely-failed>Try again?</ely-failed>
+      <ng-content elyNotLoaded></ng-content>
+      <span elyFailed>Try again?</span>
     </ely-loadable>
   </button>
 </div>

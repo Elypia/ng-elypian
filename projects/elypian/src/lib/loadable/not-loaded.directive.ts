@@ -1,7 +1,7 @@
 import {Directive} from '@angular/core';
 
 @Directive({
-  selector: 'ely-not-loaded'
+  selector: '[elyNotLoaded]'
 })
 export class NotLoadedDirective {
 
