@@ -1,0 +1,11 @@
+<mat-expansion-panel>
+  <div class="title">
+    <h2>
+      <a *ngIf="link" [routerLink]="link">{{title}}</a>
+      <span *ngIf="!link">{{title}}</span>
+    </h2>
+    <ely-timestamp [date]="createdDate" [updateDate]="modifiedDate"></ely-timestamp>
+  </div>
+  <ng-content></ng-content>
+  <p class="tag">{{tags.join(' | ')}}</p>
+</mat-expansion-panel>

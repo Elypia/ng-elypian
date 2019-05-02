@@ -4,6 +4,7 @@ mat-sidenav-container {
 
 mat-sidenav {
   width: 256px;
+  border-radius: 0 0 0.25em 0.25em;
 }
 
 mat-list {
@@ -15,10 +16,6 @@ button {
   border-radius: 0;
 }
 
-mat-sidenav {
-  border-radius: 0 0 0.25em 0.25em;
-}
-
 mat-tab-group {
   margin-top: 1em;
   user-select: none;
@@ -26,4 +23,5 @@ mat-tab-group {
 
 mat-card {
   border-radius: 0 0 0.25em 0.25em;
+  margin-bottom: 32px;
 }

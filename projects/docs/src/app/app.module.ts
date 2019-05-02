@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-import {HomeComponent} from './pages/home/home.component';
 import {
   MatButtonModule,
   MatButtonToggleModule,
@@ -25,11 +24,11 @@ import {TimestampExampleComponent} from './examples/timestamp-example/timestamp-
 import {CodeExampleComponent} from './components/code-example/code-example.component';
 import {ElypianModule} from '../../../elypian/src/lib/elypian.module';
 import {FormsModule} from '@angular/forms';
-import { ModifiedTimestampExampleComponent } from './examples/modified-timestamp-example/modified-timestamp-example.component';
+import {ModifiedTimestampExampleComponent} from './examples/modified-timestamp-example/modified-timestamp-example.component';
+import {TimestampFaExampleComponent} from './examples/timestamp-fa-example/timestamp-fa-example.component';
 
 const appRoutes: Routes = [
-  { path: 'component/:id', component: ComponentOverviewComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: ComponentOverviewComponent },
   { path: '**', redirectTo: '' },
 ];
 
@@ -51,8 +50,8 @@ const markdownOptions: MarkdownModuleConfig = {
     StatefulButtonExampleComponent,
     TimestampExampleComponent,
     ComponentOverviewComponent,
-    HomeComponent,
-    ModifiedTimestampExampleComponent
+    ModifiedTimestampExampleComponent,
+    TimestampFaExampleComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -79,7 +78,8 @@ const markdownOptions: MarkdownModuleConfig = {
     LoadableExampleComponent,
     StatefulButtonExampleComponent,
     TimestampExampleComponent,
-    ModifiedTimestampExampleComponent
+    ModifiedTimestampExampleComponent,
+    TimestampFaExampleComponent
   ]
 })
 export class AppModule { }

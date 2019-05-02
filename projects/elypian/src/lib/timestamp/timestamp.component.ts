@@ -14,19 +14,12 @@ export class TimestampComponent {
    */
   @Input() date: Date = new Date();
 
-  /**
-   * The date this item was last updated.
-   */
+  /** The date this item was last updated. */
   @Input() updateDate: Date;
 
-  /**
-   * The format to display dates.
-   */
+  /** The format to display dates. */
   @Input() format: string = 'mediumDate';
 
-  /**
-   * Which direction to display the last updated date
-   * as a tooltip.
-   */
-  @Input() updateTooltipPosition: TooltipPosition = 'below';
+  /** Which direction to display the last updated date as a tooltip. */
+  @Input() updateTooltipPosition: TooltipPosition = 'left';
 }

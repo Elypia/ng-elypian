@@ -1,7 +1,7 @@
 <div>
   <button mat-button
           [ngClass]="{'success': state === LoadState.Loaded,
-                    'failed': state === LoadState.Failed}">
+                     'failed': state === LoadState.Failed}">
     <ely-loadable [spinnerDiameter]="24" [state]="state">
       <span>Success</span>
       <ng-content elyNotLoaded></ng-content>

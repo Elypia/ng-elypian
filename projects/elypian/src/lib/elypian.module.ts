@@ -5,6 +5,7 @@ import {
   MatButtonToggleModule,
   MatCardModule,
   MatChipsModule,
+  MatExpansionModule,
   MatIconModule,
   MatListModule,
   MatProgressSpinnerModule,
@@ -24,6 +25,7 @@ import {NotLoadedDirective} from './loadable/not-loaded.directive';
 import {FailedDirective} from './loadable/failed.directive';
 import {MarkdownModule} from 'ngx-markdown';
 import {RouterModule} from '@angular/router';
+import {ArticleComponent} from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import {RouterModule} from '@angular/router';
     TimestampComponent,
     TimegraphComponent,
     NotLoadedDirective,
-    FailedDirective
+    FailedDirective,
+    ArticleComponent
   ],
   imports: [
     MatButtonModule,
@@ -51,7 +54,8 @@ import {RouterModule} from '@angular/router';
     MarkdownModule,
     MatTabsModule,
     RouterModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatExpansionModule
   ],
   exports: [
     StatefulButtonComponent,
@@ -59,7 +63,7 @@ import {RouterModule} from '@angular/router';
     TimestampComponent,
     TimegraphComponent,
     NotLoadedDirective,
-    FailedDirective,
+    FailedDirective
   ]
 })
 export class ElypianModule { }

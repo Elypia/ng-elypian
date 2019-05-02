@@ -3,6 +3,7 @@ import {LoadableExampleComponent} from '../examples/loadable-example/loadable-ex
 import {StatefulButtonExampleComponent} from '../examples/stateful-button-example/stateful-button-example.component';
 import {TimestampExampleComponent} from '../examples/timestamp-example/timestamp-example.component';
 import {ModifiedTimestampExampleComponent} from '../examples/modified-timestamp-example/modified-timestamp-example.component';
+import {TimestampFaExampleComponent} from '../examples/timestamp-fa-example/timestamp-fa-example.component';
 
 export interface DocItem {
   id: string;
@@ -39,7 +40,8 @@ export class DocService {
       summary: 'A simple timestamp that conveys date information and last modification.',
       examples: [
         TimestampExampleComponent,
-        ModifiedTimestampExampleComponent
+        ModifiedTimestampExampleComponent,
+        TimestampFaExampleComponent
       ]
     }
   ];

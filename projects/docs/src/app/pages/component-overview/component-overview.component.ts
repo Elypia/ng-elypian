@@ -20,9 +20,12 @@ export class ComponentOverviewComponent implements OnInit {
   ) { }
 
   public ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
+    this.route.queryParamMap.subscribe((params) => {
       this.doc = this.docs.getItem(params.get('id'));
       this.cd.detectChanges();
+
+      if (!this.example)
+        return;
 
       this.example.clear();
 

@@ -1,8 +1,8 @@
-div {
-  display: flex;
-  align-items: center;
+mat-icon {
+  display: none;
+  padding-right: 0.25em;
 }
 
-mat-icon {
-  padding-right: 0.25em;
+.content:empty + mat-icon {
+  display: initial;
 }

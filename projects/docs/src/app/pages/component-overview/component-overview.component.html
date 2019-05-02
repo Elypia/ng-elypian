@@ -3,7 +3,7 @@
     <mat-list>
       <button mat-button
               *ngFor="let doc of docs.Docs"
-              [routerLink]="['/component', doc.id]">
+              routerLink="" [queryParams]="{id: doc.id}">
         <mat-list-item>
           {{doc.name}}
         </mat-list-item>

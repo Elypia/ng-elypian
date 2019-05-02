@@ -1,10 +1,9 @@
 @import '~@angular/material/theming';
 @import '../../elypian/src/lib/stateful-button/stateful-button.theme';
 
-$primary: mat-palette($mat-blue);
+$primary: mat-palette($mat-blue, 600, 200, 800);
 $accent: mat-palette($mat-blue-gray);
-$warn: mat-palette($mat-red);
-$theme: mat-dark-theme($primary, $accent, $warn);
+$theme: mat-dark-theme($primary, $accent);
 
 @include mat-core();
 @include angular-material-theme($theme);
