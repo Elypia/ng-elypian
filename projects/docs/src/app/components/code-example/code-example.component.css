@@ -17,11 +17,3 @@ mat-card-title {
 mat-tab-group {
   padding-top: 1em;
 }
-
-.html, .ts, .css {
-  display: none;
-}
-
-.html-content:empty + .html, .ts-content:empty + .ts, .css-content:empty + .css {
-  display: initial;
-}

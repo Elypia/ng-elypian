@@ -1,24 +1,8 @@
-<app-code-example name="Simple Loadable Example">
-  <mat-radio-group [(ngModel)]="state">
-    <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
-    <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
-    <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
-  </mat-radio-group>
-  <ely-loadable [state]="state">
-    <p>Content loaded from remotely.</p>
-  </ely-loadable>
-  <markdown ngPreserveWhitespaces class="html">
-    ```html
-    &lt;!-- Manage the LoadState and pass it to ely-loadable. --&gt;
-    &lt;ely-loadable [state]=&quot;state&quot;&gt;
-      &lt;p&gt;Content loaded from remotely.&lt;/p&gt;
-    &lt;/ely-loadable&gt;
-    ```
-  </markdown>
-  <markdown ngPreserveWhitespaces class="ts">
-    ```ts
-    /** The current state of the component. */
-    public state: LoadState = LoadState.Loading;
-    ```
-  </markdown>
-</app-code-example>
+<mat-radio-group [(ngModel)]="state">
+  <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
+</mat-radio-group>
+<ely-loadable [state]="state">
+  <p>Content loaded from remotely.</p>
+</ely-loadable>

@@ -26,6 +26,7 @@ import {ElypianModule} from '../../../elypian/src/lib/elypian.module';
 import {FormsModule} from '@angular/forms';
 import {ModifiedTimestampExampleComponent} from './examples/modified-timestamp-example/modified-timestamp-example.component';
 import {TimestampFaExampleComponent} from './examples/timestamp-fa-example/timestamp-fa-example.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: '', component: ComponentOverviewComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
 ];
 
 const markdownOptions: MarkdownModuleConfig = {
+  loader: HttpClient,
   markedOptions: {
     provide: MarkedOptions,
     useValue: {
@@ -56,6 +58,7 @@ const markdownOptions: MarkdownModuleConfig = {
   imports: [
     RouterModule.forRoot(appRoutes),
     MarkdownModule.forRoot(markdownOptions),
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,

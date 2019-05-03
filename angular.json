@@ -63,7 +63,13 @@
               "projects/docs/src/mstile-150x150.png",
               "projects/docs/src/safari-pinned-tab.svg",
               "projects/docs/src/site.webmanifest",
-              "projects/docs/src/assets"
+              "projects/docs/src/assets/",
+              {
+                "glob": "*/*",
+                "ignore": ["*/*.spec.ts"],
+                "input": "projects/docs/src/app/examples/",
+                "output": "examples/"
+              }
             ],
             "styles": [
               "projects/docs/src/styles.scss",

@@ -22,7 +22,9 @@
           </mat-card>
         </mat-tab>
         <mat-tab label="Examples">
-          <mat-card><div #example></div></mat-card>
+          <mat-card>
+            <app-code-example *ngFor="let example of doc.examples" [doc]="doc" [example]="example"></app-code-example>
+          </mat-card>
         </mat-tab>
       </mat-tab-group>
   </mat-sidenav-content>

@@ -1,23 +1,9 @@
-<app-code-example name="Simple Stateful Button Example">
-  <mat-radio-group [(ngModel)]="state">
-    <mat-radio-button [value]="LoadState.NotLoaded">Not Loaded</mat-radio-button>
-    <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
-    <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
-    <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
-  </mat-radio-group>
-  <ely-stateful-button [state]="state">
-    Login
-  </ely-stateful-button>
-  <markdown ngPreserveWhitespaces class="html">
-    ```html
-    &lt;!-- Manage the LoadState and pass it to ely-stateful-button. --&gt;
-    &lt;ely-stateful-button [state]=&quot;state&quot;&gt;Login&lt;/ely-stateful-button&gt;
-    ```
-  </markdown>
-  <markdown ngPreserveWhitespaces class="ts">
-    ```ts
-    /** The current state of the component. */
-    public state: LoadState = LoadState.NotLoaded;
-    ```
-  </markdown>
-</app-code-example>
+<mat-radio-group [(ngModel)]="state">
+  <mat-radio-button [value]="LoadState.NotLoaded">Not Loaded</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Loading">Loading</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Loaded">Loaded</mat-radio-button>
+  <mat-radio-button [value]="LoadState.Failed">Failed</mat-radio-button>
+</mat-radio-group>
+<ely-stateful-button [state]="state">
+  Login
+</ely-stateful-button>

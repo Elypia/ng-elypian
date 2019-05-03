@@ -1,6 +1,6 @@
 {
   "name": "@elypia/elypian-angular",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components for use across internal projects.",
   "author": "Elypia",
   "repository": {

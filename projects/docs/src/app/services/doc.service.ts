@@ -9,7 +9,13 @@ export interface DocItem {
   id: string;
   name: string;
   summary: string;
-  examples: any[];
+  examples: DocExample[];
+}
+
+export interface DocExample {
+  id: string;
+  name: string;
+  example: any;
 }
 
 @Injectable({
@@ -17,13 +23,19 @@ export interface DocItem {
 })
 export class DocService {
 
+  private static readonly ExampleUrl: string = '/examples/';
+
   public readonly Docs: DocItem[] = [
     {
       id: 'loadable',
       name: 'Loadable',
       summary: 'A panel to manage loadable content and manage unloaded, loading, loaded and failed states.',
       examples: [
-        LoadableExampleComponent
+        {
+          id: 'loadable',
+          name: 'Minimal Loading',
+          example: LoadableExampleComponent
+        }
       ]
     },
     {
@@ -31,7 +43,11 @@ export class DocService {
       name: 'Stateful Button',
       summary: 'A clickable button that displays the state of it\'s action.',
       examples: [
-        StatefulButtonExampleComponent
+        {
+          id: 'stateful-button',
+          name: 'Minimal Stateful Button',
+          example: StatefulButtonExampleComponent
+        }
       ]
     },
     {
@@ -39,14 +55,30 @@ export class DocService {
       name: 'Timestamp',
       summary: 'A simple timestamp that conveys date information and last modification.',
       examples: [
-        TimestampExampleComponent,
-        ModifiedTimestampExampleComponent,
-        TimestampFaExampleComponent
+        {
+          id: 'timestamp',
+          name: 'Current Timestamp',
+          example: TimestampExampleComponent
+        },
+        {
+          id: 'modified-timestamp',
+          name: 'Modified Timestamp',
+          example: ModifiedTimestampExampleComponent
+        },
+        {
+          id: 'timestamp-fa',
+          name: 'Modified Timestamp with FontAwesome',
+          example: TimestampFaExampleComponent
+        }
       ]
     }
   ];
 
-  getItem(id: string): DocItem {
+  public getItem(id: string): DocItem {
     return this.Docs.find(d => d.id === id);
+  }
+
+  public getFile(id: string, type: string): string {
+    return `${DocService.ExampleUrl}${id}-example/${id}-example.component.${type}`;
   }
 }

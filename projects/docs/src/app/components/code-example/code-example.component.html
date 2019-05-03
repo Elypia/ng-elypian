@@ -1,38 +1,23 @@
 <div class="example">
   <mat-card-title>
-    {{name}}
+    {{example.name}}
     <mat-button-toggle [checked]="viewCode"
                        (change)="viewCode = $event.source.checked">
       <mat-icon>code</mat-icon>
     </mat-button-toggle>
   </mat-card-title>
   <div class="example-component">
-    <ng-content></ng-content>
+    <div #element></div>
   </div>
   <mat-tab-group *ngIf="viewCode">
     <mat-tab label="HTML">
-      <div class="html-content"><ng-content select=".html"></ng-content></div>
-      <markdown ngPreserveWhitespaces class="html">
-        ```html
-        &lt;!-- No HTML to show! --&gt;
-        ```
-      </markdown>
+      <markdown ngPreserveWhitespaces [src]="getFile('html')"></markdown>
     </mat-tab>
     <mat-tab label="TS">
-      <div class="ts-content"><ng-content select=".ts"></ng-content></div>
-      <markdown ngPreserveWhitespaces class="ts">
-        ```ts
-        // No TS to show!
-        ```
-      </markdown>
+      <markdown ngPreserveWhitespaces [src]="getFile('ts')"></markdown>
     </mat-tab>
     <mat-tab label="CSS">
-      <div class="css-content"><ng-content select=".css"></ng-content></div>
-      <markdown ngPreserveWhitespaces class="css">
-        ```css
-        /* No CSS to show! */
-        ```
-      </markdown>
+      <markdown ngPreserveWhitespaces [src]="getFile('css')"></markdown>
     </mat-tab>
   </mat-tab-group>
 </div>
