@@ -7,6 +7,7 @@ import {
   MatChipsModule,
   MatExpansionModule,
   MatIconModule,
+  MatInputModule,
   MatListModule,
   MatProgressSpinnerModule,
   MatRadioModule,
@@ -26,6 +27,8 @@ import {FailedDirective} from './loadable/failed.directive';
 import {MarkdownModule} from 'ngx-markdown';
 import {RouterModule} from '@angular/router';
 import {ArticleComponent} from './article/article.component';
+import {EqualsDirective} from './validators/equals/equals.directive';
+import {EqualsValidatorExampleComponent} from '../../../docs/src/app/examples/equals-validator-example/equals-validator-example.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import {ArticleComponent} from './article/article.component';
     TimegraphComponent,
     NotLoadedDirective,
     FailedDirective,
-    ArticleComponent
+    ArticleComponent,
+    EqualsDirective,
+    EqualsValidatorExampleComponent
   ],
   imports: [
     MatButtonModule,
@@ -55,7 +60,8 @@ import {ArticleComponent} from './article/article.component';
     MatTabsModule,
     RouterModule,
     MatButtonToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule
   ],
   exports: [
     StatefulButtonComponent,

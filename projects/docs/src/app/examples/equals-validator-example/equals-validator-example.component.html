@@ -1,0 +1,15 @@
+<form>
+  <div ngModelGroup="pmg" #pmg="ngModelGroup" [elyEquals]="['password', 'verifyPassword']">
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input matNativeControl [(ngModel)]="password" name="password" type="password"/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Verify Password</mat-label>
+      <input matNativeControl [errorStateMatcher]="matcher" [(ngModel)]="verifyPassword" name="verifyPassword" type="password"/>
+      <mat-error *ngIf="pmg.invalid && pmg.errors['equals']">
+        Password doesn't match!
+      </mat-error>
+    </mat-form-field>
+  </div>
+</form>

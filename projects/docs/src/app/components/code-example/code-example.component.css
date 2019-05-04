@@ -17,3 +17,7 @@ mat-card-title {
 mat-tab-group {
   padding-top: 1em;
 }
+
+markdown {
+  user-select: text;
+}

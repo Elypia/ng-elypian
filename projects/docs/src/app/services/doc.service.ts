@@ -4,6 +4,12 @@ import {StatefulButtonExampleComponent} from '../examples/stateful-button-exampl
 import {TimestampExampleComponent} from '../examples/timestamp-example/timestamp-example.component';
 import {ModifiedTimestampExampleComponent} from '../examples/modified-timestamp-example/modified-timestamp-example.component';
 import {TimestampFaExampleComponent} from '../examples/timestamp-fa-example/timestamp-fa-example.component';
+import {EqualsValidatorExampleComponent} from '../examples/equals-validator-example/equals-validator-example.component';
+
+export interface DocGroup {
+  name: string;
+  items: DocItem[];
+}
 
 export interface DocItem {
   id: string;
@@ -25,57 +31,86 @@ export class DocService {
 
   private static readonly ExampleUrl: string = '/examples/';
 
-  public readonly Docs: DocItem[] = [
+  public readonly Groups: DocGroup[] = [
     {
-      id: 'loadable',
-      name: 'Loadable',
-      summary: 'A panel to manage loadable content and manage unloaded, loading, loaded and failed states.',
-      examples: [
+      name: 'Components',
+      items: [
         {
           id: 'loadable',
-          name: 'Minimal Loading',
-          example: LoadableExampleComponent
-        }
-      ]
-    },
-    {
-      id: 'stateful-button',
-      name: 'Stateful Button',
-      summary: 'A clickable button that displays the state of it\'s action.',
-      examples: [
+          name: 'Loadable',
+          summary: 'A panel to manage loadable content and manage unloaded, loading, loaded and failed states.',
+          examples: [
+            {
+              id: 'loadable',
+              name: 'Minimal Loading',
+              example: LoadableExampleComponent
+            }
+          ]
+        },
         {
           id: 'stateful-button',
-          name: 'Minimal Stateful Button',
-          example: StatefulButtonExampleComponent
+          name: 'Stateful Button',
+          summary: 'A clickable button that displays the state of it\'s action.',
+          examples: [
+            {
+              id: 'stateful-button',
+              name: 'Minimal Stateful Button',
+              example: StatefulButtonExampleComponent
+            }
+          ]
+        },
+        {
+          id: 'timestamp',
+          name: 'Timestamp',
+          summary: 'A simple timestamp that conveys date information and last modification.',
+          examples: [
+            {
+              id: 'timestamp',
+              name: 'Current Timestamp',
+              example: TimestampExampleComponent
+            },
+            {
+              id: 'modified-timestamp',
+              name: 'Modified Timestamp',
+              example: ModifiedTimestampExampleComponent
+            },
+            {
+              id: 'timestamp-fa',
+              name: 'Modified Timestamp with FontAwesome',
+              example: TimestampFaExampleComponent
+            }
+          ]
         }
       ]
     },
     {
-      id: 'timestamp',
-      name: 'Timestamp',
-      summary: 'A simple timestamp that conveys date information and last modification.',
-      examples: [
+      name: 'Validators',
+      items: [
         {
-          id: 'timestamp',
-          name: 'Current Timestamp',
-          example: TimestampExampleComponent
-        },
-        {
-          id: 'modified-timestamp',
-          name: 'Modified Timestamp',
-          example: ModifiedTimestampExampleComponent
-        },
-        {
-          id: 'timestamp-fa',
-          name: 'Modified Timestamp with FontAwesome',
-          example: TimestampFaExampleComponent
+          id: 'equals',
+          name: 'Equals Validator',
+          summary: 'Equals validation to ensure to form fields are the same value, for example to verify a password.',
+          examples: [
+            {
+              id: 'equals-validator',
+              name: 'Password Validation with MatFormField',
+              example: EqualsValidatorExampleComponent
+            }
+          ]
         }
       ]
     }
   ];
 
   public getItem(id: string): DocItem {
-    return this.Docs.find(d => d.id === id);
+    for (const group of this.Groups) {
+      for (const item of group.items) {
+        if (item.id === id)
+          return item;
+      }
+    }
+
+    return null;
   }
 
   public getFile(id: string, type: string): string {

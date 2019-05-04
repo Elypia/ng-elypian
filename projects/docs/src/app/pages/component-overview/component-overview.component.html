@@ -1,12 +1,11 @@
 <mat-sidenav-container>
-  <mat-sidenav  mode="side" opened>
-    <mat-list>
-      <button mat-button
-              *ngFor="let doc of docs.Docs"
-              routerLink="" [queryParams]="{id: doc.id}">
-        <mat-list-item>
-          {{doc.name}}
-        </mat-list-item>
+  <mat-sidenav mode="side" opened>
+    <mat-list *ngFor="let group of docs.Groups">
+      <h2>{{group.name}}</h2>
+      <button mat-button *ngFor="let item of group.items"
+              routerLink="" [queryParams]="{id: item.id}"
+              [ngClass]="{'selected': doc && doc.id === item.id}">
+        {{item.name}}
       </button>
     </mat-list>
   </mat-sidenav>
