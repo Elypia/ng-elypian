@@ -1,4 +1,4 @@
-import {Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
+import {AfterViewInit, Component, ComponentFactoryResolver, Input, ViewChild, ViewContainerRef} from '@angular/core';
 import {DocExample, DocItem, DocService} from '../services/doc.service';
 
 @Component({
@@ -6,9 +6,9 @@ import {DocExample, DocItem, DocService} from '../services/doc.service';
   templateUrl: './code-example.component.html',
   styleUrls: ['./code-example.component.css']
 })
-export class CodeExampleComponent implements OnInit {
+export class CodeExampleComponent implements AfterViewInit {
 
-  @ViewChild('element', {read: ViewContainerRef}) private element;
+  @ViewChild('element', {read: ViewContainerRef}) public element;
 
   @Input() doc: DocItem;
   @Input() example: DocExample;
@@ -20,7 +20,7 @@ export class CodeExampleComponent implements OnInit {
     private docs: DocService
   ) {}
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     if (this.example)
       this.element.createComponent(this.resolver.resolveComponentFactory(this.example.example));
   }
