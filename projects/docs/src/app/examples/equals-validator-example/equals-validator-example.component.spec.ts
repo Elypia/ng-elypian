@@ -1,6 +1,10 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {EqualsValidatorExampleComponent} from './equals-validator-example.component';
+import {MatFormFieldModule, MatInputModule} from '@angular/material';
+import {ElyEqualsModule} from '../../../../../elypian/src/lib/equals/equals.module';
+import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('EqualsValidatorExampleComponent', () => {
   let component: EqualsValidatorExampleComponent;
@@ -8,7 +12,14 @@ describe('EqualsValidatorExampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EqualsValidatorExampleComponent ]
+      declarations: [ EqualsValidatorExampleComponent ],
+      imports: [
+        FormsModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ElyEqualsModule
+      ]
     })
     .compileComponents();
   }));

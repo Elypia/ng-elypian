@@ -11,7 +11,7 @@
   </mat-sidenav>
   <mat-sidenav-content *ngIf="doc" class="container">
       <h1>{{doc.name}}</h1>
-      <mat-tab-group animationDuration="200" [dynamicHeight]="true">
+      <mat-tab-group animationDuration="0">
         <mat-tab label="Overview">
           <mat-card [innerHTML]="doc.summary | markdown"></mat-card>
         </mat-tab>

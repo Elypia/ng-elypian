@@ -2,12 +2,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {RouterModule, Routes} from '@angular/router';
 import {
   MatButtonModule,
   MatButtonToggleModule,
   MatCardModule,
+  MatFormFieldModule,
   MatIconModule,
+  MatInputModule,
   MatListModule,
   MatMenuModule,
   MatRadioModule,
@@ -15,19 +16,23 @@ import {
   MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
-import {ComponentOverviewComponent} from './pages/component-overview/component-overview.component';
+import {ComponentOverviewComponent} from './component-overview/component-overview.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MarkdownModule, MarkdownModuleConfig, MarkedOptions} from 'ngx-markdown';
 import {LoadableExampleComponent} from './examples/loadable-example/loadable-example.component';
 import {StatefulButtonExampleComponent} from './examples/stateful-button-example/stateful-button-example.component';
 import {TimestampExampleComponent} from './examples/timestamp-example/timestamp-example.component';
-import {CodeExampleComponent} from './components/code-example/code-example.component';
-import {ElypianModule} from '../../../elypian/src/lib/elypian.module';
+import {CodeExampleComponent} from './code-example/code-example.component';
 import {FormsModule} from '@angular/forms';
 import {ModifiedTimestampExampleComponent} from './examples/modified-timestamp-example/modified-timestamp-example.component';
 import {TimestampFaExampleComponent} from './examples/timestamp-fa-example/timestamp-fa-example.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {EqualsValidatorExampleComponent} from './examples/equals-validator-example/equals-validator-example.component';
+import {ElyLoadableModule} from '../../../elypian/src/lib/loadable/loadable.module';
+import {ElyStatefulButtonModule} from '../../../elypian/src/lib/stateful-button/stateful-button.module';
+import {ElyTimestampModule} from '../../../elypian/src/lib/timestamp/timestamp.module';
+import {ElyEqualsModule} from '../../../elypian/src/lib/equals/equals.module';
+import {RouterModule, Routes} from '@angular/router';
 
 const appRoutes: Routes = [
   { path: '', component: ComponentOverviewComponent },
@@ -54,7 +59,8 @@ const markdownOptions: MarkdownModuleConfig = {
     TimestampExampleComponent,
     ComponentOverviewComponent,
     ModifiedTimestampExampleComponent,
-    TimestampFaExampleComponent
+    TimestampFaExampleComponent,
+    EqualsValidatorExampleComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -67,13 +73,19 @@ const markdownOptions: MarkdownModuleConfig = {
     MatButtonModule,
     MatSidenavModule,
     MatTabsModule,
-    ElypianModule,
     MatButtonToggleModule,
     MatIconModule,
     MatCardModule,
     MatRadioModule,
     FormsModule,
-    MatListModule
+    MatListModule,
+
+    ElyLoadableModule,
+    ElyStatefulButtonModule,
+    ElyTimestampModule,
+    ElyEqualsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

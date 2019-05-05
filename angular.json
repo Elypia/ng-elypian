@@ -21,7 +21,8 @@
           "options": {
             "main": "projects/elypian/src/test.ts",
             "tsConfig": "projects/elypian/tsconfig.spec.json",
-            "karmaConfig": "projects/elypian/karma.conf.js"
+            "karmaConfig": "projects/elypian/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "lint": {
@@ -136,12 +137,26 @@
             "tsConfig": "projects/docs/tsconfig.spec.json",
             "karmaConfig": "projects/docs/karma.conf.js",
             "styles": [
-              "projects/docs/src/styles.css"
+              "projects/docs/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
-              "projects/docs/src/favicon.ico",
-              "projects/docs/src/assets"
+              "projects/docs/src/android-chrome-192x192.png",
+              "projects/docs/src/android-chrome-256x256.png",
+              "projects/docs/src/apple-touch-icon.png",
+              "projects/docs/src/browserconfig.xml",
+              "projects/docs/src/favicon-16x16.png",
+              "projects/docs/src/favicon-32x32.png",
+              "projects/docs/src/mstile-150x150.png",
+              "projects/docs/src/safari-pinned-tab.svg",
+              "projects/docs/src/site.webmanifest",
+              "projects/docs/src/assets/",
+              {
+                "glob": "*/*",
+                "ignore": ["*/*.spec.ts"],
+                "input": "projects/docs/src/app/examples/",
+                "output": "examples/"
+              }
             ]
           }
         },

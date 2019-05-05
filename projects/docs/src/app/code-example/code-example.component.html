@@ -1,4 +1,4 @@
-<div class="example">
+<div class="example" *ngIf="doc">
   <mat-card-title>
     {{example.name}}
     <mat-button-toggle [checked]="viewCode"
@@ -9,7 +9,7 @@
   <div class="example-component">
     <div #element></div>
   </div>
-  <mat-tab-group *ngIf="viewCode">
+  <mat-tab-group *ngIf="viewCode" animationDuration="0">
     <mat-tab label="HTML">
       <markdown ngPreserveWhitespaces [src]="getFile('html')"></markdown>
     </mat-tab>

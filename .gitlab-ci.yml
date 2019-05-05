@@ -6,16 +6,16 @@ build:
     - npm install
     - npm rebuild node-sass
     - npm run-script build
+    - npm run-script docs
   cache:
     paths:
       - node_modules/
     policy: pull-push
 
-.test:
+test:
   stage: test
   script:
-    - ng test
-    - ng e2e
+    - npm test
   cache:
     paths:
       - node_modules/

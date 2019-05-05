@@ -1,5 +1,5 @@
 import {Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
-import {DocExample, DocItem, DocService} from '../../services/doc.service';
+import {DocExample, DocItem, DocService} from '../services/doc.service';
 
 @Component({
   selector: 'app-code-example',
@@ -21,7 +21,8 @@ export class CodeExampleComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.element.createComponent(this.resolver.resolveComponentFactory(this.example.example));
+    if (this.example)
+      this.element.createComponent(this.resolver.resolveComponentFactory(this.example.example));
   }
 
   public getFile(type: string) {

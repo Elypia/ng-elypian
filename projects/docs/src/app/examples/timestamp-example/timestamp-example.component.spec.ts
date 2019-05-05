@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TimestampExampleComponent } from './timestamp-example.component';
+import {TimestampExampleComponent} from './timestamp-example.component';
+import {ElyTimestampModule} from '../../../../../elypian/src/lib/timestamp/timestamp.module';
 
 describe('TimestampExampleComponent', () => {
   let component: TimestampExampleComponent;
@@ -8,7 +9,8 @@ describe('TimestampExampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimestampExampleComponent ]
+      declarations: [ TimestampExampleComponent ],
+      imports: [ ElyTimestampModule ]
     })
     .compileComponents();
   }));

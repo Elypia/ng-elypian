@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TimestampComponent } from './timestamp.component';
+import {TimestampComponent} from './timestamp.component';
+import {MatIconModule, MatTooltipModule} from '@angular/material';
 
 describe('TimestampComponent', () => {
   let component: TimestampComponent;
@@ -8,7 +9,11 @@ describe('TimestampComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimestampComponent ]
+      declarations: [ TimestampComponent ],
+      imports: [
+        MatTooltipModule,
+        MatIconModule
+      ]
     })
     .compileComponents();
   }));

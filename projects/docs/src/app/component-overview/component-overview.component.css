@@ -31,6 +31,10 @@ mat-tab-group {
   user-select: none;
 }
 
+mat-tab {
+  height: 100%;
+}
+
 mat-card {
   border-radius: 0 0 0.25em 0.25em;
   margin-bottom: 32px;

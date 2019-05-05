@@ -1,6 +1,6 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {DocItem, DocService} from '../../services/doc.service';
 import {ActivatedRoute} from '@angular/router';
+import {DocItem, DocService} from '../services/doc.service';
 
 @Component({
   selector: 'app-component-overview',
