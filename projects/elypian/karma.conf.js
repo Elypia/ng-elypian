@@ -26,12 +26,6 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: true,
-    restartOnFileChange: true,
-    customLaunchers: {
-      ChromeHeadless: {
-        base: 'Chrome',
-        flags: ['--headless']
-      }
-    }
+    restartOnFileChange: true
   });
 };
