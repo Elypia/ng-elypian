@@ -74,11 +74,11 @@
             ],
             "styles": [
               "projects/docs/src/styles.scss",
-              "node_modules/marked/lib/marked.js",
               "node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
               "node_modules/prismjs/prism.js",
+              "node_modules/marked/lib/marked.js",
               "node_modules/prismjs/components/prism-markup.min.js",
               "node_modules/prismjs/components/prism-css.min.js",
               "node_modules/prismjs/components/prism-typescript.min.js"
@@ -137,9 +137,16 @@
             "tsConfig": "projects/docs/tsconfig.spec.json",
             "karmaConfig": "projects/docs/karma.conf.js",
             "styles": [
-              "projects/docs/src/styles.scss"
+              "projects/docs/src/styles.scss",
+              "node_modules/prismjs/themes/prism-okaidia.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/marked/lib/marked.js",
+              "node_modules/prismjs/components/prism-markup.min.js",
+              "node_modules/prismjs/components/prism-css.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js"
+            ],
             "assets": [
               "projects/docs/src/android-chrome-192x192.png",
               "projects/docs/src/android-chrome-256x256.png",
