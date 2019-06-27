@@ -1,6 +1,5 @@
-/*
- * Public API Surface of elypian
- */
+/* Public API Surface of elypian */
+
 export * from './lib/loading';
 
 export * from './lib/equals/equals.module';

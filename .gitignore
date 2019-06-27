@@ -45,9 +45,10 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#################
-# Configuration #
-#################
+###################
+# Elypian Angular #
+###################
 
 *.pem
 *.key
+.idea/
