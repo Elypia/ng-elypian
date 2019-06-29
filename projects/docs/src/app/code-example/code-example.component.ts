@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ComponentFactoryResolver, Input, ViewChild, ViewContainerRef} from '@angular/core';
+import {AfterViewInit, Component, ComponentFactoryResolver, Input, ViewChild} from '@angular/core';
 import {DocExample, DocItem, DocService} from '../services/doc.service';
 
 @Component({
@@ -8,7 +8,7 @@ import {DocExample, DocItem, DocService} from '../services/doc.service';
 })
 export class CodeExampleComponent implements AfterViewInit {
 
-  @ViewChild('element', {read: ViewContainerRef}) public element;
+  @ViewChild('element', {static: false}) public element;
 
   @Input() doc: DocItem;
   @Input() example: DocExample;
@@ -21,8 +21,11 @@ export class CodeExampleComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit(): void {
-    if (this.example)
-      this.element.createComponent(this.resolver.resolveComponentFactory(this.example.example));
+    if (!this.example)
+      return;
+
+    console.log(`Creating element for example: ${this.example.name}`);
+    this.element.createComponent(this.resolver.resolveComponentFactory(this.example.example));
   }
 
   public getFile(type: string) {
