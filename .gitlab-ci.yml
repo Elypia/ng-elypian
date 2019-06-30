@@ -1,4 +1,4 @@
-image: trion/ng-cli-karma
+image: trion/ng-cli-e2e:8.0.6
 
 cache:
   paths:
