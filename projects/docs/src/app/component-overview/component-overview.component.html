@@ -13,12 +13,10 @@
       <h1>{{doc.name}}</h1>
       <mat-tab-group animationDuration="0">
         <mat-tab label="Overview">
-          <mat-card [innerHTML]="doc.summary | markdown"></mat-card>
+          <mat-card ngPreserveWhitespaces [innerHTML]="doc.summary | markdown"></mat-card>
         </mat-tab>
         <mat-tab label="API">
-          <mat-card>
-            Haven't written anything. DX
-          </mat-card>
+          <mat-card ngPreserveWhitespaces [innerHTML]="doc.api | markdown"></mat-card>
         </mat-tab>
         <mat-tab label="Examples">
           <mat-card>

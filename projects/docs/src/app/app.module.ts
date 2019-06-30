@@ -26,7 +26,7 @@ import {CodeExampleComponent} from './code-example/code-example.component';
 import {FormsModule} from '@angular/forms';
 import {ModifiedTimestampExampleComponent} from './examples/modified-timestamp-example/modified-timestamp-example.component';
 import {TimestampFaExampleComponent} from './examples/timestamp-fa-example/timestamp-fa-example.component';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import {EqualsValidatorExampleComponent} from './examples/equals-validator-example/equals-validator-example.component';
 import {ElyLoadableModule} from '../../../elypian/src/lib/loadable/loadable.module';
 import {ElyStatefulButtonModule} from '../../../elypian/src/lib/stateful-button/stateful-button.module';
@@ -40,7 +40,6 @@ const appRoutes: Routes = [
 ];
 
 const markdownOptions: MarkdownModuleConfig = {
-  loader: HttpClient,
   markedOptions: {
     provide: MarkedOptions,
     useValue: {

@@ -16,6 +16,7 @@ test:
   stage: test
   script:
     - npm test
+    - npm e2e
   cache:
     paths:
       - node_modules/

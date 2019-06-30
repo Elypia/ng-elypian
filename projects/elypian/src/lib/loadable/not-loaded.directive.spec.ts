@@ -1,4 +1,4 @@
-import { NotLoadedDirective } from './not-loaded.directive';
+import {NotLoadedDirective} from './not-loaded.directive';
 
 describe('NotLoadedDirective', () => {
   it('should create an instance', () => {

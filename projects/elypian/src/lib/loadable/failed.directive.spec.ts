@@ -1,4 +1,4 @@
-import { FailedDirective } from './failed.directive';
+import {FailedDirective} from './failed.directive';
 
 describe('FailedDirective', () => {
   it('should create an instance', () => {

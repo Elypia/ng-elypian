@@ -1,5 +1,5 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {DocItem, DocService} from '../services/doc.service';
 
 @Component({
@@ -14,13 +14,20 @@ export class ComponentOverviewComponent implements OnInit {
   constructor(
     private cd: ChangeDetectorRef,
     private route: ActivatedRoute,
+    private router: Router,
     public docs: DocService
   ) { }
 
   public ngOnInit(): void {
     this.route.queryParamMap.subscribe((params) => {
-      this.doc = this.docs.getItem(params.get('id'));
+      const id: string = params.get('id');
+
+      if (!id)
+        this.router.navigate(['/']);
+
+      this.doc = this.docs.getItem(id);
       this.cd.detectChanges();
+      this.cd.markForCheck();
     });
   }
 }
