@@ -1,17 +1,17 @@
 {
-  "name": "@elypia/elypian-angular",
-  "version": "0.1.1",
+  "name": "@elypia/ng-elypian",
+  "version": "1.0.0",
   "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components.",
   "license": "Apache 2.0",
   "author": "Elypia",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/Elypia/elypian-angular.git"
+    "url": "https://gitlab.com/Elypia/ng-elypian.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/Elypia/elypian-angular/issues"
+    "url": "https://gitlab.com/Elypia/ng-elypian/issues"
   },
-  "homepage": "https://mat.elypia.com/",
+  "homepage": "https://ng.elypia.com/",
   "keywords": [
     "angular",
     "javascript",

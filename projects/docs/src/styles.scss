@@ -7,7 +7,7 @@ $theme: mat-dark-theme($primary, $accent);
 
 @include mat-core();
 @include angular-material-theme($theme);
-@include elypian-angular-stateful-button-theme($theme);
+@include ng-elypian-stateful-button-theme($theme);
 
 html, body, app-root, div, header, footer,
 h1, h2, h3, h4, h5, h6,

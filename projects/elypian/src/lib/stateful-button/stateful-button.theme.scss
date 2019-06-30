@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-@mixin elypian-angular-stateful-button-theme($theme) {
+@mixin ng-elypian-stateful-button-theme($theme) {
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
 
