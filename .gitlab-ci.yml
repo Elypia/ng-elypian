@@ -19,3 +19,5 @@ test:
     - npm run-script e2e
   cache:
     policy: pull
+    paths:
+      - node_modules/
