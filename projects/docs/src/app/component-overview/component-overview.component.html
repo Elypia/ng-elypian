@@ -1,6 +1,6 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened>
-    <mat-list *ngFor="let group of docs.Groups">
+    <mat-list *ngFor="let group of groups">
       <h2>{{group.name}}</h2>
       <button mat-button *ngFor="let item of group.items"
               routerLink="" [queryParams]="{id: item.id}"

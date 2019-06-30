@@ -1,6 +1,6 @@
 import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {DocItem, DocService} from '../services/doc.service';
+import {DocGroup, DocItem, DocService} from '../services/doc.service';
 
 @Component({
   selector: 'app-component-overview',
@@ -10,6 +10,7 @@ import {DocItem, DocService} from '../services/doc.service';
 export class ComponentOverviewComponent implements OnInit {
 
   public doc: DocItem;
+  public groups: DocGroup[];
 
   constructor(
     private cd: ChangeDetectorRef,
@@ -25,9 +26,11 @@ export class ComponentOverviewComponent implements OnInit {
       if (!id)
         this.router.navigate(['/']);
 
-      this.doc = this.docs.getItem(id);
+      this.doc = DocService.getItem(id);
       this.cd.detectChanges();
       this.cd.markForCheck();
     });
+
+    this.groups = DocService.Groups;
   }
 }

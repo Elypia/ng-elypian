@@ -33,11 +33,13 @@ export interface DocExample {
 })
 export class DocService {
 
+  constructor(private markdownService: MarkdownService) {
+
+  }
+
   private static readonly ExampleUrl: string = '/examples/';
-
-  private readonly cache: Map<string, Observable<string>> = new Map<string, Observable<string>>();
-
-  private readonly Groups: DocGroup[] = [
+  private static readonly Cache: Map<string, Observable<string>> = new Map<string, Observable<string>>();
+  public static readonly Groups: DocGroup[] = [
     {
       name: 'Components',
       items: [
@@ -121,24 +123,8 @@ export class DocService {
     }
   ];
 
-  constructor(private markdownService: MarkdownService) {
-
-  }
-
-  public getFileContent(id: string, type: string): Observable<string> {
-    const path: string = `${DocService.ExampleUrl}${id}-example/${id}-example.component.${type}`;
-
-    if (this.cache.has(path))
-      return this.cache.get(path);
-
-    return this.markdownService.getSource(path).pipe((o) => {
-      this.cache.set(path, o);
-      return o;
-    });
-  }
-
-  public getItem(id: string): DocItem {
-    for (const group of this.Groups) {
+  public static getItem(id: string): DocItem {
+    for (const group of DocService.Groups) {
       for (const item of group.items) {
         if (item.id === id)
           return item;
@@ -146,5 +132,17 @@ export class DocService {
     }
 
     return null;
+  }
+
+  public getFileContent(id: string, type: string): Observable<string> {
+    const path: string = `${DocService.ExampleUrl}${id}-example/${id}-example.component.${type}`;
+
+    if (DocService.Cache.has(path))
+      return DocService.Cache.get(path);
+
+    return this.markdownService.getSource(path).pipe((o) => {
+      DocService.Cache.set(path, o);
+      return o;
+    });
   }
 }
