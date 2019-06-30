@@ -15,7 +15,7 @@ build:
 test:
   stage: test
   script:
-    - npm test
-    - npm e2e
+    - npm run-script test
+    - npm run-script e2e
   cache:
     policy: pull
