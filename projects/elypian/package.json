@@ -1,7 +1,7 @@
 {
   "name": "@elypia/elypian-angular",
-  "version": "0.1.0",
-  "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components for use across internal projects.",
+  "version": "0.1.1",
+  "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components.",
   "license": "Apache 2.0",
   "author": "Elypia",
   "repository": {
@@ -18,7 +18,7 @@
     "typescript"
   ],
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
   }
 }
