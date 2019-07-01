@@ -1,7 +1,7 @@
 mat-toolbar {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 80px;
   position: relative;
   z-index: 2;
 }
@@ -11,20 +11,23 @@ mat-toolbar {
   align-items: center;
 }
 
-#toolbar-left a img {
-  padding-left: 0.5em;
+#logo {
+  height: 64px;
 }
 
-#logo {
-  height: 3em;
-  padding-right: 1em;
+#title {
+  margin: 0 1em;
+}
+
+.shield {
+  padding-right: 0.5em;
 }
 
 button {
   margin-left: 1em;
 }
 
-.fab {
+.icon {
   padding-right: 0.5em;
 }
 

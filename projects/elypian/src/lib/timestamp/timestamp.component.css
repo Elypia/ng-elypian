@@ -1,8 +1,11 @@
 mat-icon {
   display: none;
-  padding-right: 0.25em;
 }
 
 .content:empty + mat-icon {
   display: initial;
+}
+
+.date {
+  padding-left: 0.25em;
 }

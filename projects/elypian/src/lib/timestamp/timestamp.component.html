@@ -1,9 +1,9 @@
 <div>
-  <span *ngIf="updateDate"
-         matTooltip="Modified on: {{updateDate | date: format}}"
-         [matTooltipPosition]="updateTooltipPosition">
+  <span class="icon" *ngIf="updateDate"
+        matTooltip="Modified on: {{updateDate | date: format}}"
+        [matTooltipPosition]="updateTooltipPosition">
     <span class="content"><ng-content></ng-content></span>
     <mat-icon [inline]="true">edit</mat-icon>
   </span>
-  <span>{{date | date: format}}</span>
+  <span class="date">{{date | date: format}}</span>
 </div>
