@@ -33,6 +33,7 @@ import {ElyStatefulButtonModule} from '../../../elypian/src/lib/stateful-button/
 import {ElyTimestampModule} from '../../../elypian/src/lib/timestamp/timestamp.module';
 import {ElyEqualsModule} from '../../../elypian/src/lib/equals/equals.module';
 import {RouterModule, Routes} from '@angular/router';
+import {ToolbarComponent} from './toolbar/toolbar.component';
 
 const appRoutes: Routes = [
   { path: '', component: ComponentOverviewComponent },
@@ -59,7 +60,8 @@ const markdownOptions: MarkdownModuleConfig = {
     ComponentOverviewComponent,
     ModifiedTimestampExampleComponent,
     TimestampFaExampleComponent,
-    EqualsValidatorExampleComponent
+    EqualsValidatorExampleComponent,
+    ToolbarComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

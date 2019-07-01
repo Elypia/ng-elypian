@@ -15,8 +15,7 @@ export class ComponentOverviewComponent implements OnInit {
   constructor(
     private cd: ChangeDetectorRef,
     private route: ActivatedRoute,
-    private router: Router,
-    public docs: DocService
+    private router: Router
   ) { }
 
   public ngOnInit(): void {

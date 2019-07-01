@@ -9,8 +9,11 @@ $theme: mat-dark-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include ng-elypian-stateful-button-theme($theme);
 
-html, body, app-root, div, header, footer,
+/* Reset */
+app-root,
+html, body, div, header, footer,
 h1, h2, h3, h4, h5, h6,
+li, ul,
 p, a {
   margin: 0;
   padding: 0;

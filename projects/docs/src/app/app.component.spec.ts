@@ -3,12 +3,14 @@ import {AppComponent} from './app.component';
 import {MatButtonModule, MatToolbarModule} from '@angular/material';
 import {CommonModule} from '@angular/common';
 import {RouterTestingModule} from '@angular/router/testing';
+import {ToolbarComponent} from './toolbar/toolbar.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ToolbarComponent
       ],
       imports: [
         MatToolbarModule,
