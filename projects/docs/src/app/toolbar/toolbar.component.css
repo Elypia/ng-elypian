@@ -1,22 +1,8 @@
 mat-toolbar {
   display: flex;
   justify-content: space-between;
-  height: 80px;
   position: relative;
   z-index: 2;
-}
-
-#toolbar-left, #toolbar-left a {
-  display: flex;
-  align-items: center;
-}
-
-#logo {
-  height: 64px;
-}
-
-#title {
-  margin: 0 1em;
 }
 
 .shield {
@@ -24,9 +10,11 @@ mat-toolbar {
 }
 
 button {
-  margin-left: 1em;
+  margin: 2px;
+  font-weight: bold;
 }
 
 .icon {
+  height: 2em;
   padding-right: 0.5em;
 }

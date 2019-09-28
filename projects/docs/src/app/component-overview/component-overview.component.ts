@@ -19,11 +19,8 @@ export class ComponentOverviewComponent implements OnInit {
   ) { }
 
   public ngOnInit(): void {
-    this.route.queryParamMap.subscribe((params) => {
+    this.route.paramMap.subscribe((params) => {
       const id: string = params.get('id');
-
-      if (!id)
-        this.router.navigate(['/']);
 
       this.doc = DocService.getItem(id);
       this.cd.detectChanges();

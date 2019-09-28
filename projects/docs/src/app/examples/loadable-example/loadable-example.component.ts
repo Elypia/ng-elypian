@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {LoadState} from '../../../../../elypian/src/lib/loading';
 
 @Component({
@@ -8,5 +8,5 @@ import {LoadState} from '../../../../../elypian/src/lib/loading';
 })
 export class LoadableExampleComponent {
   public readonly LoadState = LoadState;
-  @Input() public state: LoadState = LoadState.Loading;
+  public state: LoadState = LoadState.Loading;
 }

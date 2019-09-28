@@ -20,4 +20,4 @@ for Material Angular if any are worth putting forward.
 [npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [npm-downloads]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
 [mat-ang]: https://github.com/angular/components "Material Angular on GitHub"
-[ng-ely]: https://ng.elypia.com/ "ng-elypian"
+[ng-ely]: https://ng.elypia.org/ "ng-elypian"

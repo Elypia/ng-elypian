@@ -34,9 +34,12 @@ import {ElyTimestampModule} from '../../../elypian/src/lib/timestamp/timestamp.m
 import {ElyEqualsModule} from '../../../elypian/src/lib/equals/equals.module';
 import {RouterModule, Routes} from '@angular/router';
 import {ToolbarComponent} from './toolbar/toolbar.component';
+import {HomeComponent} from './home/home.component';
 
 const appRoutes: Routes = [
-  { path: '', component: ComponentOverviewComponent },
+  { path: 'components/:id', component: ComponentOverviewComponent },
+  { path: 'components', component: ComponentOverviewComponent },
+  { path: '', component: HomeComponent },
   { path: '**', redirectTo: '' },
 ];
 
@@ -61,7 +64,8 @@ const markdownOptions: MarkdownModuleConfig = {
     ModifiedTimestampExampleComponent,
     TimestampFaExampleComponent,
     EqualsValidatorExampleComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

@@ -2,6 +2,9 @@
 ## About
 This is a small extension to [Material Angular][mat-ang], it is made with the intent to continue using
 the Material Angular components and styles while trying to build additional components.  
+
+New components build in this library may or may not be compatible with the original [Material Design][mat-des] spec
+
 ng-elypian is a small library which only depends on [Material Angular][mat-ang] and provides some
 small components but usually neccasary or useful components to get a website started, there are also
 directives and validators added for form validation and such as well.  
@@ -19,5 +22,6 @@ for Material Angular if any are worth putting forward.
 [gitlab-coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
 [npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [npm-downloads]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
+[mat-des]: https://material.io/design/ "Material Designs"
 [mat-ang]: https://github.com/angular/components "Material Angular on GitHub"
-[ng-ely]: https://ng.elypia.com/ "ng-elypian"
+[ng-ely]: https://ng.elypia.org/ "ng-elypian"

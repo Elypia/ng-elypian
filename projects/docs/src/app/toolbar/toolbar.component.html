@@ -1,8 +1,12 @@
 <mat-toolbar class="mat-elevation-z8" color="primary">
-  <div  id="toolbar-left">
+  <div id="toolbar-left">
     <a routerLink="/">
-      <img id="logo" src="/assets/ng-elypian.png" alt="Elypian Logo"/>
-      <span id="title">ng-elypian</span>
+      <button mat-button id="title">
+        <img class="icon" src="/favicon-32x32.png" alt="Elypian Logo"/> Elypian
+      </button>
+    </a>
+    <a routerLink="/components">
+      <button mat-button>Components</button>
     </a>
     <a class="shield" href="https://discord.gg/hprGMaM" target="_blank">
       <img src="https://discordapp.com/api/guilds/184657525990359041/widget.png" alt="Discord Badge"/>

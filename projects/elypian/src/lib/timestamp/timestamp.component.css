@@ -1,3 +1,8 @@
+div {
+  display: flex;
+  align-items: center;
+}
+
 mat-icon {
   display: none;
 }
