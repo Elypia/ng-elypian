@@ -8,7 +8,7 @@ import {DocExample, DocItem, DocService} from '../services/doc.service';
 })
 export class CodeExampleComponent implements AfterViewInit {
 
-  @ViewChild('element', {static: false, read: ViewContainerRef}) public element: ViewContainerRef;
+  @ViewChild('element', { read: ViewContainerRef }) public element: ViewContainerRef;
 
   @Input() doc: DocItem;
   @Input() example: DocExample;

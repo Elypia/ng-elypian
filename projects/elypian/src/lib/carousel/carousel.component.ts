@@ -17,7 +17,7 @@ export class CarouselComponent implements AfterViewInit {
   @ContentChildren(CarouselItemDirective) public carouselItems: QueryList<CarouselItemDirective>;
 
   /** Collate all creates carousel elements into a list. */
-  @ViewChild('item', {static: false, read: ElementRef}) private firstCarouselItem: ElementRef;
+  @ViewChild('item', { read: ElementRef }) private firstCarouselItem: ElementRef;
 
   public carouselWrapperStyle = {};
 
