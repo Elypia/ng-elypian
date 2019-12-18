@@ -12,7 +12,20 @@ directives and validators added for form validation and such as well.
 All components are visible through the [Angular Elypian] website with documentation,
 usage, and examples to get you going.
 
-[discord]: https://discord.gg/hprGMaM "Discord Invite"
+## Open-Source
+This project is licenced under the Apache 2.0 project, don't be afraid to derive or reference
+from this project all you want!
+
+**All non-code files including videos, models, audio, bitmaps, vectors, and 
+animations such as gifs, are not under the aforementioned license; all rights
+are reserved by Elypia CIC.** 
+
+## Support
+Should any problems occur, come visit us over on [Discord]! We're always around and
+there are ample developers that would be willing to help; if it's a problem with the library
+itself then we'll make sure to get it sorted.
+
+[Discord]: https://discordapp.com/invite/hprGMaM "Discord Invite"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
 [npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [elypia-donate]: https://elypia.org/donate "Donate to Elypia"

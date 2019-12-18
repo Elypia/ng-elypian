@@ -2,7 +2,7 @@ import {AfterViewInit, Component, ContentChildren, ElementRef, QueryList, ViewCh
 import {CarouselItemDirective} from './carousel-item.directive';
 
 @Component({
-  selector: 'app-carousel',
+  selector: 'ely-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })

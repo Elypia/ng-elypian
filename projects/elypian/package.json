@@ -1,6 +1,6 @@
 {
   "name": "@elypia/ng-elypian",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components.",
   "license": "Apache 2.0",
   "author": "Elypia",

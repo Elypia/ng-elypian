@@ -1,23 +1,54 @@
-image: trion/ng-cli-e2e:8.0.6
+image: node:10.16.3-alpine
+
+stages:
+  - prepare
+  - test
+  - build
 
 cache:
+  policy: pull-push
   paths:
     - node_modules/
 
-build:
-  stage: build
+prepare-init:
+  stage: prepare
   script:
     - npm install
     - npm rebuild node-sass
-    - npm run-script build
-    - npm run-script docs
 
-test:
+test-lint:
   stage: test
   script:
+    - npm run-script lint
+  cache:
+    policy: pull
+    paths:
+      - node_modules/
+
+test-unit:
+  stage: test
+  image: buildkite/puppeteer:v1.15.0
+  script:
     - npm run-script test
+  cache:
+    policy: pull
+    paths:
+      - node_modules/
+
+# TODO: Enable e2e tests.
+.test-e2e:
+  stage: test
+  image: buildkite/puppeteer:v1.15.0
+  script:
     - npm run-script e2e
   cache:
     policy: pull
     paths:
       - node_modules/
+
+# Compile the website into static assets.
+build:
+  stage: build
+  script:
+    - npm run-script build
+    - npm run-script docs
