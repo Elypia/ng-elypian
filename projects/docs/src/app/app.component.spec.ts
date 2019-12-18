@@ -1,6 +1,7 @@
 import {async, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {MatButtonModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {CommonModule} from '@angular/common';
 import {RouterTestingModule} from '@angular/router/testing';
 import {ToolbarComponent} from './toolbar/toolbar.component';

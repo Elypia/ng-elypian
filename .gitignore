@@ -49,6 +49,7 @@ Thumbs.db
 # ng-elypian #
 ##############
 
+.scannerwork/
 *.pem
 *.key
 .idea/

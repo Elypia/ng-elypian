@@ -2,20 +2,18 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatFormFieldModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatRadioModule,
-  MatSidenavModule,
-  MatTabsModule,
-  MatToolbarModule
-} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {ComponentOverviewComponent} from './component-overview/component-overview.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MarkdownModule, MarkdownModuleConfig, MarkedOptions} from 'ngx-markdown';

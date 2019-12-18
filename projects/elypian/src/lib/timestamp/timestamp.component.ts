@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {TooltipPosition} from '@angular/material';
+import {TooltipPosition} from '@angular/material/tooltip';
 
 @Component({
   selector: 'ely-timestamp',

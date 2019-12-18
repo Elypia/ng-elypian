@@ -1,15 +1,15 @@
 {
   "name": "ng-elypian",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "Apache 2.0",
+  "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --port 4201",
     "build": "ng build",
-    "test": "ng test -- --no-progress --browsers=ChromeHeadlessCI",
+    "test": "ng test --no-progress --browsers=ChromiumHeadlessNoSandbox",
     "lint": "ng lint",
-    "e2e": "npm run-script wd-update && ng e2e --webdriver-update=false",
-    "wd-update": "webdriver-manager update --versions.chrome 2.42",
+    "e2e": "ng e2e",
     "check": "npm run-script lint && npm run-script test && npm run-script e2e",
     "docs": "ng build docs --prod"
   },

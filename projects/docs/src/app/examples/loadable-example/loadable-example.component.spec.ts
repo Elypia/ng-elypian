@@ -2,7 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {LoadableExampleComponent} from './loadable-example.component';
 import {ElyLoadableModule} from '../../../../../elypian/src/lib/loadable/loadable.module';
-import {MatButtonModule, MatRadioModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatRadioModule} from '@angular/material/radio';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 

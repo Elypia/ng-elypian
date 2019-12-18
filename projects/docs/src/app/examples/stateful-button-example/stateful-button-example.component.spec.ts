@@ -1,7 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {StatefulButtonExampleComponent} from './stateful-button-example.component';
-import {MatButtonModule, MatRadioModule} from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {ElyStatefulButtonModule} from '../../../../../elypian/src/lib/stateful-button/stateful-button.module';

@@ -1,27 +1,27 @@
-# ng-elypian [![Discord][discord-members]][discord] [![GitLab Build][gitlab-build]][gitlab] [![GitLab Coverage][gitlab-coverage]][gitlab] [![NPM][npm-downloads]][npm]
+# Angular Elypian Components [![discord-members]][discord] [![gitlab-build]][gitlab] [![gitlab-coverage]][gitlab] [![npm-downloads]][npm] [![donate-shield]][elypia-donate]
 ## About
-This is a small extension to [Material Angular][mat-ang], it is made with the intent to continue using
+This is a small extension to [Material Angular], it is made with the intent to continue using
 the Material Angular components and styles while trying to build additional components.  
 
-New components build in this library may or may not be compatible with the original [Material Design][mat-des] spec
+New components build in this library may or may not be compatible with the original [Material Design] spec
 
-ng-elypian is a small library which only depends on [Material Angular][mat-ang] and provides some
+ng-elypian is a small library which only depends on [Material Angular] and provides some
 small components but usually neccasary or useful components to get a website started, there are also
 directives and validators added for form validation and such as well.  
 
-All components are visible through the [ng-elypian][ng-ely] website with documentation,
+All components are visible through the [Angular Elypian] website with documentation,
 usage, and examples to get you going.
 
-In future it would be wonderful to try put any viable components in this library into a pull-request
-for Material Angular if any are worth putting forward.
-
 [discord]: https://discord.gg/hprGMaM "Discord Invite"
-[discord-members]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
+[npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
+[elypia-donate]: https://elypia.org/donate "Donate to Elypia"
+[Material Angular]: https://github.com/angular/components "Material Angular on GitHub"
+[Material Design]: https://material.io/design/ "Material Designs"
+[Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
+
+[discord-members]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [gitlab-build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
 [gitlab-coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
-[npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [npm-downloads]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
-[mat-des]: https://material.io/design/ "Material Designs"
-[mat-ang]: https://github.com/angular/components "Material Angular on GitHub"
-[ng-ely]: https://ng.elypia.org/ "ng-elypian"
+[donate-shield]: https://img.shields.io/badge/Elypia-Donate-blueviolet "Donate Shield"

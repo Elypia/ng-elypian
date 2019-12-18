@@ -2,7 +2,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {TimestampFaExampleComponent} from './timestamp-fa-example.component';
 import {ElyTimestampModule} from '../../../../../elypian/src/lib/timestamp/timestamp.module';
-import {MatIconModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
 
 describe('TimestampFaExampleComponent', () => {
   let component: TimestampFaExampleComponent;

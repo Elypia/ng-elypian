@@ -1,7 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {TimestampComponent} from './timestamp.component';
-import {MatIconModule, MatTooltipModule} from '@angular/material';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatIconModule} from '@angular/material/icon';
 
 describe('TimestampComponent', () => {
   let component: TimestampComponent;

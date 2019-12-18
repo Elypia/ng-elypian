@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
-import {MatIconModule, MatTooltipModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import {TimestampComponent} from './timestamp.component';
 import {CommonModule} from '@angular/common';
 

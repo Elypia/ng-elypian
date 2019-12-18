@@ -1,15 +1,13 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ComponentOverviewComponent} from './component-overview.component';
-import {
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatIconModule,
-  MatListModule,
-  MatSidenavModule,
-  MatTabsModule
-} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTabsModule} from '@angular/material/tabs';
 import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
 import {RouterTestingModule} from '@angular/router/testing';
 import {CodeExampleComponent} from '../code-example/code-example.component';
