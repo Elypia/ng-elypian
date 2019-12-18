@@ -2,7 +2,7 @@ import {LoadableComponent} from './loadable.component';
 import {NotLoadedDirective} from './not-loaded.directive';
 import {FailedDirective} from './failed.directive';
 import {NgModule} from '@angular/core';
-import {MatProgressSpinnerModule} from '@angular/material';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {CommonModule} from '@angular/common';
 
 @NgModule({

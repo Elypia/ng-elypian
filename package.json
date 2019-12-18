@@ -1,6 +1,6 @@
 {
   "name": "ng-elypian",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a small extension to Material Angular, it is made with the intent to continue using the Material Angular components and styles while trying to build additional components.",
   "keywords": [
     "angular",
