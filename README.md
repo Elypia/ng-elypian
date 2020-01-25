@@ -1,4 +1,4 @@
-# Angular Elypian Components [![discord-members]][discord] [![gitlab-build]][gitlab] [![gitlab-coverage]][gitlab] [![npm-downloads]][npm] [![donate-shield]][elypia-donate]
+# Angular Elypian Components [![matrix-members]][matrix] [![discord-members]][discord] [![gitlab-build]][gitlab] [![gitlab-coverage]][gitlab] [![npm-downloads]][npm] [![donate-shield]][elypia-donate]
 ## About
 This is a small extension to [Material Angular], it is made with the intent to continue using
 the Material Angular components and styles while trying to build additional components.  
@@ -25,6 +25,7 @@ Should any problems occur, come visit us over on [Discord]! We're always around 
 there are ample developers that would be willing to help; if it's a problem with the library
 itself then we'll make sure to get it sorted.
 
+[matrix]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
 [Discord]: https://discordapp.com/invite/hprGMaM "Discord Invite"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
 [npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
@@ -33,6 +34,7 @@ itself then we'll make sure to get it sorted.
 [Material Design]: https://material.io/design/ "Material Designs"
 [Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
 
+[matrix-members]: https://img.shields.io/matrix/elypia-general:matrix.org?logo=matrix "Matrix Shield"
 [discord-members]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [gitlab-build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
 [gitlab-coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
