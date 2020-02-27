@@ -1,4 +1,4 @@
-# Angular Elypian Components [![matrix-members]][matrix] [![discord-members]][discord] [![gitlab-build]][gitlab] [![gitlab-coverage]][gitlab] [![npm-downloads]][npm] [![donate-shield]][elypia-donate]
+# Angular Elypian Components [![Matrix]][matrix-community] [![Discord]][discord-guild] [![Build]][gitlab] [![Coverage]][gitlab] [![NPM]][npm-page] [![Donate]][elypia-donate]
 ## About
 This is a small extension to [Material Angular], it is made with the intent to continue using
 the Material Angular components and styles while trying to build additional components.  
@@ -21,22 +21,22 @@ animations such as gifs, are not under the aforementioned license; all rights
 are reserved by Elypia CIC.** 
 
 ## Support
-Should any problems occur, come visit us over on [Discord]! We're always around and
+Should any problems occur, come visit us over on Discord! We're always around and
 there are ample developers that would be willing to help; if it's a problem with the library
 itself then we'll make sure to get it sorted.
 
-[matrix]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
-[Discord]: https://discordapp.com/invite/hprGMaM "Discord Invite"
+[matrix-community]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
+[discord-guild]: https://discordapp.com/invite/hprGMaM "Discord Invite"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
-[npm]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
+[npm-page]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [elypia-donate]: https://elypia.org/donate "Donate to Elypia"
 [Material Angular]: https://github.com/angular/components "Material Angular on GitHub"
 [Material Design]: https://material.io/design/ "Material Designs"
 [Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
 
-[matrix-members]: https://img.shields.io/matrix/elypia-general:matrix.org?logo=matrix "Matrix Shield"
-[discord-members]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
-[gitlab-build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
-[gitlab-coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
-[npm-downloads]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
-[donate-shield]: https://img.shields.io/badge/Elypia-Donate-blueviolet "Donate Shield"
+[Matrix]: https://img.shields.io/matrix/elypia-general:matrix.org?logo=matrix "Matrix Shield"
+[Discord]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
+[Build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
+[Coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
+[NPM]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
+[Donate]: https://img.shields.io/badge/Elypia-Donate-blueviolet "Donate Shield"
