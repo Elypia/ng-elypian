@@ -7,8 +7,8 @@
     "material",
     "components"
   ],
-  "license": "Apache 2.0",
-  "author": "seth@elypia.org (Seth Falco)",
+  "license": "Apache-2.0",
+  "author": "Elypia",
   "homepage": "https://elypia.org/",
   "private": false,
   "scripts": {

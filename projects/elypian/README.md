@@ -13,7 +13,7 @@ In future it would be wonderful to try put any viable components in this library
 for Material Angular if any are worth putting forward.
 
 [discord]: https://discord.gg/hprGMaM "Discord Invite"
-[discord-members]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
+[discord-members]: https://discord.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
 [gitlab-build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
 [gitlab-coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"

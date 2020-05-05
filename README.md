@@ -26,7 +26,7 @@ there are ample developers that would be willing to help; if it's a problem with
 itself then we'll make sure to get it sorted.
 
 [matrix-community]: https://matrix.to/#/+elypia:matrix.org "Matrix Invite"
-[discord-guild]: https://discordapp.com/invite/hprGMaM "Discord Invite"
+[discord-guild]: https://discord.com/invite/hprGMaM "Discord Invite"
 [gitlab]: https://gitlab.com/Elypia/ng-elypian/commits/master "Repository on GitLab"
 [npm-page]: https://www.npmjs.com/package/@elypia/ng-elypian "Package on NPM"
 [elypia-donate]: https://elypia.org/donate "Donate to Elypia"
@@ -35,7 +35,7 @@ itself then we'll make sure to get it sorted.
 [Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
 
 [Matrix]: https://img.shields.io/matrix/elypia-general:matrix.org?logo=matrix "Matrix Shield"
-[Discord]: https://discordapp.com/api/guilds/184657525990359041/widget.png "Discord Shield"
+[Discord]: https://discord.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [Build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
 [Coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
 [NPM]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
