@@ -1,4 +1,9 @@
-# Angular Elypian Components [![Matrix]][matrix-community] [![Discord]][discord-guild] [![Build]][gitlab] [![Coverage]][gitlab] [![NPM]][npm-page] [![Donate]][elypia-donate]
+<div align="center">
+
+# Angular Elypian Components
+[![Matrix]][matrix-community] [![Discord]][discord-guild] [![Build]][gitlab] [![Coverage]][gitlab] [![NPM]][npm-page] [![Donate]][elypia-donate]
+</div>
+
 ## About
 This is a small extension to [Material Angular], it is made with the intent to continue using
 the Material Angular components and styles while trying to build additional components.  
@@ -16,9 +21,9 @@ usage, and examples to get you going.
 This project is licenced under the Apache 2.0 project, don't be afraid to derive or reference
 from this project all you want!
 
-**All non-code files including videos, models, audio, bitmaps, vectors, and 
-animations such as gifs, are not under the aforementioned license; all rights
-are reserved by Elypia CIC.** 
+**The repository includes our trade name and registered trademarks, 
+which are not granted under the license. Please do not use these 
+except as required to describe the origin of work.**
 
 ## Support
 Should any problems occur, come visit us over on Discord! We're always around and
@@ -34,9 +39,9 @@ itself then we'll make sure to get it sorted.
 [Material Design]: https://material.io/design/ "Material Designs"
 [Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
 
-[Matrix]: https://img.shields.io/matrix/elypia-general:matrix.org?logo=matrix "Matrix Shield"
+[Matrix]: https://img.shields.io/matrix/elypia:matrix.org?logo=matrix "Matrix Shield"
 [Discord]: https://discord.com/api/guilds/184657525990359041/widget.png "Discord Shield"
 [Build]: https://gitlab.com/Elypia/ng-elypian/badges/master/pipeline.svg "GitLab Build Shield"
 [Coverage]: https://gitlab.com/Elypia/ng-elypian/badges/master/coverage.svg "GitLab Coverage Shield"
 [NPM]: https://img.shields.io/npm/dt/@elypia/ng-elypian.svg "NPM Downloads"
-[Donate]: https://img.shields.io/badge/Elypia-Donate-blueviolet "Donate Shield"
+[Donate]: https://img.shields.io/badge/elypia-donate-blueviolet "Donate Shield"
