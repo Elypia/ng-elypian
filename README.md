@@ -14,7 +14,7 @@ This is an essentially an extension for [Material Angular], as we're keen on usi
 however, the official library is missing a lot of commonly required components. We're centralizing 
 them here so it's easy for anyone to reuse them.
 
-**New components created in the library may not adhere strictly to the original [Material Design] spec.**
+**New components created in the library may not adhere strictly to the [Material Design] spec.**
 
 ## Open-Source
 This project is open-source under the [Apache 2.0]!
