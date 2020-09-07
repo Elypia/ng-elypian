@@ -5,24 +5,25 @@
 </div>
 
 ## About
-This is a small extension to [Material Angular], it is made with the intent to continue using
-the Material Angular components and styles while trying to build additional components.  
+Angular Elypian Components is a **_very subjective_** libary which contains
+Angular components that can be used across projects. It is designed with internal
+use in mind, however as it's open-source, anyone is welcome to depend on, 
+contribute, or review the code for any purpose.
 
-New components build in this library may or may not be compatible with the original [Material Design] spec
+This is an essentially an extension for [Material Angular], as we're keen on using Material Design, 
+however, the official library is missing a lot of commonly required components. We're centralizing 
+them here so it's easy for anyone to reuse them.
 
-ng-elypian is a small library which only depends on [Material Angular] and provides some
-small components but usually neccasary or useful components to get a website started, there are also
-directives and validators added for form validation and such as well.  
-
-All components are visible through the [Angular Elypian] website with documentation,
-usage, and examples to get you going.
+**New components created in the library may not adhere strictly to the original [Material Design] spec.**
 
 ## Open-Source
-This project is licenced under the Apache 2.0 project, don't be afraid to derive or reference
-from this project all you want!
+This project is open-source under the [Apache 2.0]!
+While not legal advice, you can find a [TL;DR] that sums up what you're
+allowed and not allowed to do along with any requirements if you want
+to use or derive work from this repository.
 
-**The repository includes our trade name and registered trademarks, 
-which are not granted under the license. Please do not use these 
+**The repository includes our trade name and registered trademarks,
+which are not granted under the license. Please do not use these
 except as required to describe the origin of work.**
 
 ## Support
@@ -38,6 +39,8 @@ itself then we'll make sure to get it sorted.
 [Material Angular]: https://github.com/angular/components "Material Angular on GitHub"
 [Material Design]: https://material.io/design/ "Material Designs"
 [Angular Elypian]: https://ng.elypia.org/ "ng-elypian"
+[Apache 2.0]: https://www.apache.org/licenses/LICENSE-2.0 "Apache 2.0 License"
+[TL;DR]: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0) "TL;DR of Apache 2.0"
 
 [Matrix]: https://img.shields.io/matrix/elypia:matrix.org?logo=matrix "Matrix Shield"
 [Discord]: https://discord.com/api/guilds/184657525990359041/widget.png "Discord Shield"
