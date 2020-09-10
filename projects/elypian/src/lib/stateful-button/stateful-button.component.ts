@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {LoadState} from '../loading';
+import {LoadState} from '../loadable/loading';
 
 @Component({
   selector: 'ely-stateful-button',

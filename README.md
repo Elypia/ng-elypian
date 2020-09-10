@@ -5,7 +5,7 @@
 </div>
 
 ## About
-Angular Elypian Components is a **_very subjective_** libary which contains
+Angular Elypian Components is a **_very subjective_** library which contains
 Angular components that can be used across projects. It is designed with internal
 use in mind, however as it's open-source, anyone is welcome to depend on, 
 contribute, or review the code for any purpose.

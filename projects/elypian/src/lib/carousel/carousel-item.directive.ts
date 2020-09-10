@@ -23,5 +23,5 @@ import {Directive, TemplateRef} from '@angular/core';
 })
 export class CarouselItemDirective {
 
-  public constructor(public templateRef: TemplateRef<any>) { }
+  public constructor(public templateRef: TemplateRef<unknown>) { }
 }

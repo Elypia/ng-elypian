@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {ErrorStateMatcher} from '@angular/material';
 import {FormControl, FormGroupDirective, NgForm} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
 
 class DefaultErrorStateMachine implements ErrorStateMatcher {
 

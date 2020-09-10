@@ -1,0 +1,49 @@
+<!--
+  ~ Copyright 2019-2020 Elypia CIC and Contributors (https://gitlab.com/Elypia/ng-elypian/-/graphs/master)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+  <mat-tree-node *matTreeNodeDef="let node;" [ngClass]="{'selected': node.href === currentPage}">
+    <div class="container fill">
+      <ng-container *ngIf="!node.href.startsWith('http') else externalurl">
+        <button mat-button [routerLink]="node.href" class="fill" (click)="reset()">
+          {{node.name}}
+        </button>
+      </ng-container>
+      <!-- If the link takes the user to an external location, use href instead of routerLink. -->
+      <ng-template #externalurl>
+        <a mat-button [href]="node.href" target="_blank" rel="noopener" class="fill">
+          {{node.name}}</a>
+      </ng-template>
+    </div>
+  </mat-tree-node>
+  <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
+    <div class="container fill">
+      <div class="mat-tree-node">
+        <button mat-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.name" class="fill">
+          <span class="fill split">
+            <span>{{node.name}}</span>
+              <span class="menu-toggle" [ngClass]="{'menu-expanded': treeControl.isExpanded(node)}">
+                <ng-content select=".drop-down-icon"></ng-content>
+              </span>
+          </span>
+        </button>
+      </div>
+      <ul [ngClass]="{'tree-closed': !treeControl.isExpanded(node)}">
+        <ng-container matTreeNodeOutlet></ng-container>
+      </ul>
+    </div>
+  </mat-nested-tree-node>
+</mat-tree>

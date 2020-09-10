@@ -16,4 +16,4 @@ import {CarouselItemDirective} from './carousel-item.directive';
     CarouselItemDirective
   ]
 })
-export class CarouselModule { }
+export class ElyCarouselModule { }

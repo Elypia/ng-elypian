@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {LoadState} from '../loading';
+import {LoadState} from './loading';
 
 @Component({
   selector: 'ely-loadable',

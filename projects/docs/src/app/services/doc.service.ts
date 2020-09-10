@@ -7,6 +7,7 @@ import {TimestampFaExampleComponent} from '../examples/timestamp-fa-example/time
 import {EqualsValidatorExampleComponent} from '../examples/equals-validator-example/equals-validator-example.component';
 import {MarkdownService} from 'ngx-markdown';
 import {Observable} from 'rxjs';
+import {ScrollPanelExampleComponent} from '../examples/scroll-panel-example/scroll-panel-example.component';
 
 export interface DocGroup {
   name: string;
@@ -99,7 +100,21 @@ export class DocService {
               css: false
             }
           ]
-        }
+        },
+        {
+          id: 'scroll-panel',
+          name: 'Scroll Panel',
+          summary: '',
+          api: '',
+          examples: [
+            {
+              id: 'scroll-panel',
+              name: 'Simple Example',
+              example: ScrollPanelExampleComponent,
+              css: true
+            }
+          ]
+        },
       ]
     },
     {

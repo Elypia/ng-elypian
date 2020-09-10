@@ -1,0 +1,7 @@
+<section class="scroll-panel-wrapper" [ngStyle]="carouselWrapperStyle">
+  <ul class="scroll-panel-inner" #scrollpanel>
+    <li *ngFor="let carouselItem of carouselItems;" #item>
+      <ng-container [ngTemplateOutlet]="carouselItem.templateRef"></ng-container>
+    </li>
+  </ul>
+</section>

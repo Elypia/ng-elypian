@@ -33,6 +33,8 @@ import {ElyEqualsModule} from '../../../elypian/src/lib/equals/equals.module';
 import {RouterModule, Routes} from '@angular/router';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {HomeComponent} from './home/home.component';
+import {ScrollPanelExampleComponent} from './examples/scroll-panel-example/scroll-panel-example.component';
+import {ElyScrollPanelModule} from '../../../elypian/src/lib/scroll-panel/scroll-panel.module';
 
 const appRoutes: Routes = [
   { path: 'components/:id', component: ComponentOverviewComponent },
@@ -63,7 +65,8 @@ const markdownOptions: MarkdownModuleConfig = {
     TimestampFaExampleComponent,
     EqualsValidatorExampleComponent,
     ToolbarComponent,
-    HomeComponent
+    HomeComponent,
+    ScrollPanelExampleComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -87,19 +90,12 @@ const markdownOptions: MarkdownModuleConfig = {
     ElyStatefulButtonModule,
     ElyTimestampModule,
     ElyEqualsModule,
+    ElyScrollPanelModule,
     MatFormFieldModule,
     MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [],
-  entryComponents: [
-    LoadableExampleComponent,
-    StatefulButtonExampleComponent,
-    TimestampExampleComponent,
-    ModifiedTimestampExampleComponent,
-    TimestampFaExampleComponent,
-    EqualsValidatorExampleComponent
-  ]
+  exports: []
 })
 export class AppModule { }

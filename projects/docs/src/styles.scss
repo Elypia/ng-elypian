@@ -7,7 +7,7 @@ $theme: mat-dark-theme($primary, $accent);
 
 @include mat-core();
 @include angular-material-theme($theme);
-@include ng-elypian-stateful-button-theme($theme);
+@include ely-stateful-button-theme($theme);
 
 /* Reset */
 app-root,
