@@ -1,7 +1,7 @@
 @import "lib/responsive-toolbar/responsive-toolbar.component.theme";
 @import "lib/stateful-button/stateful-button.theme";
 
-@mixin angular-elypian-theme($theme) {
+@mixin angular-elypia-theme($theme) {
   @include ely-responsive-toolbar-theme($theme);
   @include ely-stateful-button-theme($theme);
 }

@@ -1,7 +1,7 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {ModifiedTimestampExampleComponent} from './modified-timestamp-example.component';
-import {ElyTimestampModule} from '../../../../../elypian/src/lib/timestamp/timestamp.module';
+import {ElyTimestampModule} from '../../../../../elypia/src/lib/timestamp/timestamp.module';
 
 describe('ModifiedTimestampExampleComponent', () => {
   let component: ModifiedTimestampExampleComponent;

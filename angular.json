@@ -3,30 +3,30 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "elypian": {
-      "root": "projects/elypian",
-      "sourceRoot": "projects/elypian/src",
+    "elypia": {
+      "root": "projects/elypia",
+      "sourceRoot": "projects/elypia/src",
       "projectType": "library",
       "prefix": "ely",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/elypian/tsconfig.lib.json",
-            "project": "projects/elypian/ng-package.json"
+            "tsConfig": "projects/elypia/tsconfig.lib.json",
+            "project": "projects/elypia/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/elypian/tsconfig.lib.prod.json"
+              "tsConfig": "projects/elypia/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/elypian/src/test.ts",
-            "tsConfig": "projects/elypian/tsconfig.spec.json",
-            "karmaConfig": "projects/elypian/karma.conf.js",
+            "main": "projects/elypia/src/test.ts",
+            "tsConfig": "projects/elypia/tsconfig.spec.json",
+            "karmaConfig": "projects/elypia/karma.conf.js",
             "codeCoverage": true
           }
         },
@@ -34,8 +34,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/elypian/tsconfig.lib.json",
-              "projects/elypian/tsconfig.spec.json"
+              "projects/elypia/tsconfig.lib.json",
+              "projects/elypia/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -81,7 +81,8 @@
               }
             ],
             "styles": [
-              "projects/docs/src/styles.scss",
+              "projects/docs/src/styles.css",
+              "projects/docs/src/styles.theme.scss",
               "node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
@@ -148,7 +149,8 @@
             "tsConfig": "projects/docs/tsconfig.spec.json",
             "karmaConfig": "projects/docs/karma.conf.js",
             "styles": [
-              "projects/docs/src/styles.scss",
+              "projects/docs/src/styles.css",
+              "projects/docs/src/styles.theme.scss",
               "node_modules/prismjs/themes/prism-okaidia.css"
             ],
             "scripts": [
@@ -223,7 +225,7 @@
       }
     }
   },
-  "defaultProject": "elypian",
+  "defaultProject": "elypia",
   "cli": {
     "analytics": "b8bad13c-cad4-433e-9aff-aaec12afc1d1"
   }

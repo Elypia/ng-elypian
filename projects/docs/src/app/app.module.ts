@@ -26,15 +26,16 @@ import {ModifiedTimestampExampleComponent} from './examples/modified-timestamp-e
 import {TimestampFaExampleComponent} from './examples/timestamp-fa-example/timestamp-fa-example.component';
 import {HttpClientModule} from '@angular/common/http';
 import {EqualsValidatorExampleComponent} from './examples/equals-validator-example/equals-validator-example.component';
-import {ElyLoadableModule} from '../../../elypian/src/lib/loadable/loadable.module';
-import {ElyStatefulButtonModule} from '../../../elypian/src/lib/stateful-button/stateful-button.module';
-import {ElyTimestampModule} from '../../../elypian/src/lib/timestamp/timestamp.module';
-import {ElyEqualsModule} from '../../../elypian/src/lib/equals/equals.module';
+import {ElyLoadableModule} from '../../../elypia/src/lib/loadable/loadable.module';
+import {ElyStatefulButtonModule} from '../../../elypia/src/lib/stateful-button/stateful-button.module';
+import {ElyTimestampModule} from '../../../elypia/src/lib/timestamp/timestamp.module';
+import {ElyEqualsModule} from '../../../elypia/src/lib/equals/equals.module';
 import {RouterModule, Routes} from '@angular/router';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {HomeComponent} from './home/home.component';
 import {ScrollPanelExampleComponent} from './examples/scroll-panel-example/scroll-panel-example.component';
-import {ElyScrollPanelModule} from '../../../elypian/src/lib/scroll-panel/scroll-panel.module';
+import {ElyScrollPanelModule} from '../../../elypia/src/lib/scroll-panel/scroll-panel.module';
+import {MatChipsModule} from '@angular/material/chips';
 
 const appRoutes: Routes = [
   { path: 'components/:id', component: ComponentOverviewComponent },
@@ -85,7 +86,7 @@ const markdownOptions: MarkdownModuleConfig = {
     MatRadioModule,
     FormsModule,
     MatListModule,
-
+    MatChipsModule,
     ElyLoadableModule,
     ElyStatefulButtonModule,
     ElyTimestampModule,

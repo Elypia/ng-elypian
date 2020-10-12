@@ -3,7 +3,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {EqualsValidatorExampleComponent} from './equals-validator-example.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {ElyEqualsModule} from '../../../../../elypian/src/lib/equals/equals.module';
+import {ElyEqualsModule} from '../../../../../elypia/src/lib/equals/equals.module';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 

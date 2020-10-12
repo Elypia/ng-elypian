@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {LoadState} from '../../../../../elypian/src/lib/loadable/loading';
+import {LoadState} from '../../../../../elypia/src/lib/loadable/loading';
 
 @Component({
   selector: 'app-loadable-example',

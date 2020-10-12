@@ -5,7 +5,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonModule} from '@angular/material/button';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
-import {ElyStatefulButtonModule} from '../../../../../elypian/src/lib/stateful-button/stateful-button.module';
+import {ElyStatefulButtonModule} from '../../../../../elypia/src/lib/stateful-button/stateful-button.module';
 
 describe('StatefulButtonExampleComponent', () => {
   let component: StatefulButtonExampleComponent;

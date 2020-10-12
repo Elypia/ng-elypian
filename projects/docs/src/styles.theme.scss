@@ -1,0 +1,52 @@
+/*!
+ * Copyright 2019-2020 Elypia CIC and Contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import '~@angular/material/theming';
+@import '../../elypia/src/lib/stateful-button/stateful-button.theme';
+
+@include mat-core();
+
+/* Mixin to add all *.component.theme.css themes. */
+@mixin elypia-website-theme($theme) {
+  @include angular-material-theme($theme);
+  @include ely-stateful-button-theme($theme);
+}
+
+/* Dark Theme */
+$dark-primary: mat-palette($mat-grey, 900, 700, 900);
+$dark-accent: mat-palette($mat-grey, 100, 50, 200);
+$dark-theme: mat-dark-theme($dark-primary, $dark-accent);
+
+/* Light Theme */
+$light-primary: mat-palette($mat-blue, 700, 600, 800);
+$light-accent: mat-palette($mat-blue, 700, 600, 800);
+$light-theme: mat-light-theme($light-primary, $light-accent);
+
+@media (prefers-color-scheme: dark) {
+  @include elypia-website-theme($dark-theme);
+}
+
+@media (prefers-color-scheme: light) {
+  @include elypia-website-theme($light-theme);
+}
+
+[data-theme="elypia-dark-theme"] {
+  @include elypia-website-theme($dark-theme);
+}
+
+[data-theme="elypia-light-theme"] {
+  @include elypia-website-theme($light-theme);
+}

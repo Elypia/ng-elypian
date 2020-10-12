@@ -1,5 +1,5 @@
 /*
- * Copyright 2019-2020 Elypia CIC and Contributors (https://gitlab.com/Elypia/ng-elypian/-/graphs/master)
+ * Copyright 2019-2020 Elypia CIC and Contributors (https://gitlab.com/Elypia/ng-elypia/-/graphs/master)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,31 +16,39 @@
 
 import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
 
-import {MobileToolbarMenuComponent} from './mobile-toolbar-menu.component';
+import {ResponsiveToolbarComponent} from './responsive-toolbar.component';
+import {RouterTestingModule} from '@angular/router/testing';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {CommonModule} from '@angular/common';
 import {MatTreeModule} from '@angular/material/tree';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
 import {FormsModule} from '@angular/forms';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import {MobileToolbarMenuComponent} from './mobile-toolbar-menu.component';
 
-describe('MobileToolbarMenuComponent', () => {
-  let component: MobileToolbarMenuComponent;
-  let fixture: ComponentFixture<MobileToolbarMenuComponent>;
+describe('ToolbarComponent', () => {
+  let component: ResponsiveToolbarComponent;
+  let fixture: ComponentFixture<ResponsiveToolbarComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MobileToolbarMenuComponent ],
+      declarations: [
+        ResponsiveToolbarComponent,
+        MobileToolbarMenuComponent
+      ],
       imports: [
-        CommonModule,
-        MatTreeModule,
+        RouterTestingModule,
         RouterModule,
+        CommonModule,
+        FormsModule,
+        MatDialogModule,
+        MatTreeModule,
         MatButtonModule,
         MatMenuModule,
         MatIconModule,
-        FormsModule,
         MatToolbarModule
       ]
     })
@@ -48,7 +56,7 @@ describe('MobileToolbarMenuComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MobileToolbarMenuComponent);
+    fixture = TestBed.createComponent(ResponsiveToolbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

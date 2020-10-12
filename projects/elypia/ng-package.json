@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/elypian",
+  "dest": "../../dist/elypia",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

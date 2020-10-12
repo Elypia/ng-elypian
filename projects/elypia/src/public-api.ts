@@ -1,4 +1,4 @@
-/* Public API Surface of elypian */
+/* Public API Surface of elypia */
 
 export * from './lib/equals/equals.module';
 export * from './lib/equals/equals.directive';

@@ -1,17 +1,17 @@
 {
-  "name": "@elypia/ng-elypian",
+  "name": "@elypia/ng-elypia",
   "version": "2.0.0",
-  "description": "Angular Elypian Components is a very subjective library which contains Angular components that can be used across projects.",
+  "description": "Elypia Angular Components is a very subjective library which contains Angular components that can be used across projects.",
   "license": "Apache-2.0",
   "author": "Elypia CIC and Contributors",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/Elypia/ng-elypian.git"
+    "url": "https://gitlab.com/Elypia/ng-elypia.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/Elypia/ng-elypian/issues"
+    "url": "https://gitlab.com/Elypia/ng-elypia/issues"
   },
-  "homepage": "https://ng.elypia.org/",
+  "homepage": "https://elypia.gitlab.io/ng-elypia/",
   "keywords": [
     "angular",
     "javascript",

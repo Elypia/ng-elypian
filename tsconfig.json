@@ -20,11 +20,11 @@
       "dom"
     ],
     "paths": {
-      "elypian": [
-        "dist/elypian"
+      "elypia": [
+        "dist/elypia"
       ],
-      "elypian/*": [
-        "dist/elypian/*"
+      "elypia/*": [
+        "dist/elypia/*"
       ]
     }
   }
